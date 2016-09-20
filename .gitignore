@@ -1,3 +1,9 @@
+#Ignore file running Arma
+*.bat
+
+#Ignore data folder. It contains only .png's and .paa's
+/data/
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

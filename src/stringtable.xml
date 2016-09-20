@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="KSS">
+	<Package name="Notification">
+		<Key ID="STR_KSS_lowHunger_1">
+			<English>You feel a little hungry</English>
+			<Russian>Вы чуствуете лёгкий голод</Russian>
+		</Key>
+		<Key ID="STR_KSS_lowHunger_2">
+			<English>You feel hungry. Find some food</English>
+			<Russian>Вы чувствуете голод. Найдите еду</Russian>
+		</Key>
+		<Key ID="STR_KSS_lowHunger_3">
+			<English>You a very hungry. Hurry up, find some food</English>
+			<Russian>Вы сильно голодны. Быстрее ищите еду</Russian>
+		</Key>
+		<Key ID="STR_KSS_lowHunger_4">
+			<English>You are terribly hungry. You start feeling weak</English>
+			<Russian>Вы ужасно голодный. Вы начинаете слабеть</Russian>
+		</Key>
+		<Key ID="STR_KSS_lowHunger_death">
+			<English>You've starved to death</English>
+			<Russian>Вы умерли от голода</Russian>
+		</Key>
+		<Key ID="STR_KSS_lowThirst_1">
+			<English>You feel a little thirsty</English>
+			<Russian>Вы чуствуете лёгкую жажду</Russian>
+		</Key>
+		<Key ID="STR_KSS_lowThirst_2">
+			<English>You feel thirsty. Find some water</English>
+			<Russian>Вы чувствуете жажду. Найдите воду</Russian>
+		</Key>
+		<Key ID="STR_KSS_lowThirst_3">
+			<English>You a very thirsty. Hurry up, find some water</English>
+			<Russian>Вы сильно хотите пить. Быстрее ищите воду</Russian>
+		</Key>
+		<Key ID="STR_KSS_lowThirst_4">
+			<English>You are terribly thirsty. You start feeling weak</English>
+			<Russian>Вы ужасно хотите пить. Вы начинаете слабеть</Russian>
+		</Key>
+		<Key ID="STR_KSS_lowThirst_death">
+			<English>You've died from dehydration</English>
+			<Russian>Вы умерли от обезвоживания</Russian>
+		</Key>
+    </Package>
+</Project>
