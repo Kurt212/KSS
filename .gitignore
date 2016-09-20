@@ -1,9 +1,6 @@
 #Ignore file running Arma
 *.bat
 
-#Ignore .gitignore file
-*.gitignore
-
 #Ignore data folder. It contains only .png's and .paa's
 /data/
 
