@@ -18,9 +18,10 @@ _this spawn {
 		{
 			params["_display", "_key"];
 
-			if(_key == DIK_ESCAPE) then{
+			if(_key == DIK_ESCAPE) then {
 
-				[[_display, 1],  KSS_fnc_destroyDialog, [], {KSS_interrupted = true}] spawn KSS_fnc_execAfter;
+				[[_display, 0.75],  KSS_fnc_destroyDialog, [], {KSS_interrupted = true}] spawn KSS_fnc_execAfter;
+
 			};
 
 			true;

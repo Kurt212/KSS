@@ -52,7 +52,7 @@ KSS_progress_thirst = true;
 					hint localize "STR_KSS_lowHunger_4";
 					player setDamage (damage player) * 1.5;
 				};
-				case 1: {
+				case 0: {
 					hint localize "STR_KSS_lowHunger_death";
 					player setDamage 1;
 				};
@@ -89,7 +89,7 @@ KSS_progress_thirst = true;
 					hint localize "STR_KSS_lowThirst_4";
 					player setDamage (damage player) * 1.5;
 				};
-				case 1: {
+				case 0: {
 					hint localize "STR_KSS_lowThirst_death";
 					player setDamage 1;
 				};

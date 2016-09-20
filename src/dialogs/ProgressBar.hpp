@@ -4,7 +4,7 @@ class KSS_ProgressBar_Dialog
 	movingEnable = true; 
 	enableSimulation = true; 
 
-	onLoad = " uiNamespace setVariable ['KSS_ProgressBar', _this select 0]";
+	onLoad = "uiNamespace setVariable ['KSS_ProgressBar', _this select 0]";
 	onUnload = "";
 
 	class Controls 

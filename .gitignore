@@ -1,6 +1,9 @@
 #Ignore file running Arma
 *.bat
 
+#Of course
+*.biprivatekey
+
 #Ignore data folder. It contains only .png's and .paa's
 /data/
 
