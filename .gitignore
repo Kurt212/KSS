@@ -4,6 +4,9 @@
 #Ignore data folder. It contains only .png's and .paa's
 /data/
 
+#Sometimes this folder happens
+/~kss.vr/
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

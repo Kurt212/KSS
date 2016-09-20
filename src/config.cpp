@@ -3,14 +3,19 @@ class CfgPatches
 	class KSS
 	{
 		name = "Kurt's Survival System";
-		author = "Kurt";
+		author[] = {"Kurt"};
+		authorUrl = "https://github.com/Kurt212";
+
+		version = 1.1.0;
+		versionStr = "1.1.0";
+		versionAr[] = {1,1,0};
+
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {};
+		requiredAddons[] = {"cba_main"};
 	};
 };
-
 
 class cfgFunctions 
 {

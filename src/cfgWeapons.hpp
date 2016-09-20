@@ -425,30 +425,14 @@ class kss_mushrooms: kss_itemcore
 {
 	displayName = "Грибы";
 	descriptionShort = "Свежие грибы";
-	//picture = "\kss\data\soup_chicken_CA.paa";
+	picture = "\kss\data\mushrooms_CA.paa";
 	class ItemInfo: InventoryItem_Base_F {
 		mass = 5;
 	};	
 	class KSS
 	{
-		delay = 20;
+		delay = 10;
 		type = "food";
 		add = "floor (random 5) + 10";
 	};
 };
-
-kss_tin_empty: kss_itemcore
-{
-	displayName = "Пустая консервная банка";
-	descriptionShort = "Найденная в куче мусора";
-	picture = "\kss\data\tin_empty_CA.paa";
-	class ItemInfo: InventoryItem_Base_F {
-		mass = 5;
-	};	
-	class KSS
-	{
-		delay = 20;
-		type = "food";
-		add = "floor (random 5) + 10";
-	};
-}

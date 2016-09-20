@@ -7,10 +7,14 @@ class KSS
 			postInit = 1;
 		};
 		class onItemUsed {};
-		class progressBar {};
+		
 		class Eat {};
 		class Drink {};
 
+		class execAfter {};
+		class progressBar {};
+
 		class drawDefaultHud {};
+		class destroyDialog {};
 	};
 };	
