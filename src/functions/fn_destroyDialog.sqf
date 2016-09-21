@@ -6,7 +6,11 @@ _dcoords = [
 	[-2, 0],
 	[+2, 0],
 	[0, -2],
-	[0, 2]
+	[0, +2],
+	[-2, -2],
+	[+2, -2],
+	[-2, +2],
+	[+2, +2]
 ] call BIS_fnc_selectRandom;
 
 _dcoords params ["_dx", "_dy"];
