@@ -1,3 +1,11 @@
+/*
+	File: fn_drawDefaultHUD
+	Exec: anywhere
+	Author: Kurt
+	Arguments :
+		Null
+*/
+
 ("KSS_HUD_0" call BIS_fnc_rscLayer) cutRsc ["KSS_HUD_0", "PLAIN"];
 
 KSS_fnc_drawHUD = {

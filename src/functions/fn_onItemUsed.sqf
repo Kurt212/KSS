@@ -1,3 +1,12 @@
+/*
+	File: fn_onItemUsed
+	Exec: KSS_fnc_init
+	Author: Kurt
+	Arguments :
+		0 - (CTRL) one of the 3 inventory ctrl's
+		1 - (SCALAR) index of the selected item
+*/
+
 disableserialization;
 private ["_ctrl","_index","_text","_item","_data"];
 _ctrl = _this select 0;

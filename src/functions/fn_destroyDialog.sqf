@@ -1,3 +1,12 @@
+/*
+	File: fn_destroyDialog
+	Exec: from KSS_fnc_progressBar
+	Author: Kurt
+	Arguments :
+		0 - (DISPLAY) diplay
+		1 - (SCALAR) time	
+*/	
+
 disableSerialization;
 
 params["_display", "_time"];

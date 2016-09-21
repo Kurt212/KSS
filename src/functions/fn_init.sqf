@@ -1,3 +1,11 @@
+/*
+	File: fn_init
+	Exec: postInit
+	Author: Kurt
+	Arguments :
+		Null
+*/
+
 #include "\x\cba\addons\main\script_macros_common.hpp"
 
 #define def_HUNGER_DELAY 72
