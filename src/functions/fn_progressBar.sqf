@@ -1,3 +1,16 @@
+/*
+	File: fn_progressBar
+	Exec: KSS_fnc_onItemUsed
+	Author: Kurt
+	Arguments :
+		0 - (SCALAR) duration
+		1 - (STRING) bar's title
+		2 - (ARRAY) start script params
+		3 - (SCRIPT}) start script
+		4 - (ARRAY) end script params
+		5 - (SCRIPT) end script
+*/
+
 #include "../dik_keyCodes.h"
 
 closeDialog 0;
