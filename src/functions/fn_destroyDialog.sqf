@@ -12,8 +12,8 @@ disableSerialization;
 params["_display", "_time"];
 
 _dcoords = [
-	[-2, 0],
-	[+2, 0],
+	[-2, +0],
+	[+2, +0],
 	[+0, -2],
 	[+0, +2],
 	[-2, -2],
