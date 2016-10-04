@@ -11,7 +11,6 @@ waitUntil {
 	box addItemCargoGlobal [_x, 10];
 }forEach KSS_usableItems;
 
-[] call KSS_fnc_drawDefaultHud;
 
 box addAction [
 	"<t color = '#FF0000'>Голод на 10",

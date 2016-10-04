@@ -3,28 +3,26 @@ class CfgPatches
 	class KSS
 	{
 		name = "Kurt's Survival System";
-		author[] = {"Kurt"};
+		author = "Kurt";
 		authorUrl = "https://github.com/Kurt212";
 
-		version = 1.1.0;
-		versionStr = "1.1.0";
-		versionAr[] = {1,1,0};
+		version = "1.2.0";
 
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"cba_main"};
+		requiredAddons[] = {"cba_main", "A3_Modules_F"};
 	};
 };
 
-class cfgFunctions 
+class CfgFunctions
 {
-	#include "cfgFunctions.hpp"
+	#include "CfgFunctions.hpp"
 };
 
-class cfgWeapons
+class CfgWeapons
 {
-	#include "cfgWeapons.hpp"
+	#include "CfgWeapons.hpp"
 };
 
 class CfgSounds
@@ -32,5 +30,17 @@ class CfgSounds
 	sounds[] = {};
 	#include "CfgSounds.hpp"
 };
+
+class CfgFactionClasses
+{
+	class NO_CATEGORY;
+	class KSS: NO_CATEGORY
+	{
+		displayName = "KSS";
+	};
+};
+
+
+#include "CfgVehicles.hpp"
 
 #include "dialogs.hpp"
