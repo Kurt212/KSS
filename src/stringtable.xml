@@ -2,44 +2,78 @@
 <Project name="KSS">
 	<Package name="Notification">
 		<Key ID="STR_KSS_lowHunger_1">
-			<English>You feel a little hungry</English>
+			<Original>You feel a little hungry</Original>
 			<Russian>Вы чуствуете лёгкий голод</Russian>
 		</Key>
 		<Key ID="STR_KSS_lowHunger_2">
-			<English>You feel hungry. Find some food</English>
+			<Original>You feel hungry. Find some food</Original>
 			<Russian>Вы чувствуете голод. Найдите еду</Russian>
 		</Key>
 		<Key ID="STR_KSS_lowHunger_3">
-			<English>You a very hungry. Hurry up, find some food</English>
+			<Original>You a very hungry. Hurry up, find some food</Original>
 			<Russian>Вы сильно голодны. Быстрее ищите еду</Russian>
 		</Key>
 		<Key ID="STR_KSS_lowHunger_4">
-			<English>You are terribly hungry. You start feeling weak</English>
+			<Original>You are terribly hungry. You start feeling weak</Original>
 			<Russian>Вы ужасно голодный. Вы начинаете слабеть</Russian>
 		</Key>
 		<Key ID="STR_KSS_lowHunger_death">
-			<English>You've starved to death</English>
+			<Original>You've starved to death</Original>
 			<Russian>Вы умерли от голода</Russian>
 		</Key>
 		<Key ID="STR_KSS_lowThirst_1">
-			<English>You feel a little thirsty</English>
+			<Original>You feel a little thirsty</Original>
 			<Russian>Вы чуствуете лёгкую жажду</Russian>
 		</Key>
 		<Key ID="STR_KSS_lowThirst_2">
-			<English>You feel thirsty. Find some water</English>
+			<Original>You feel thirsty. Find some water</Original>
 			<Russian>Вы чувствуете жажду. Найдите воду</Russian>
 		</Key>
 		<Key ID="STR_KSS_lowThirst_3">
-			<English>You a very thirsty. Hurry up, find some water</English>
+			<Original>You a very thirsty. Hurry up, find some water</Original>
 			<Russian>Вы сильно хотите пить. Быстрее ищите воду</Russian>
 		</Key>
 		<Key ID="STR_KSS_lowThirst_4">
-			<English>You are terribly thirsty. You start feeling weak</English>
+			<Original>You are terribly thirsty. You start feeling weak</Original>
 			<Russian>Вы ужасно хотите пить. Вы начинаете слабеть</Russian>
 		</Key>
 		<Key ID="STR_KSS_lowThirst_death">
-			<English>You've died from dehydration</English>
+			<Original>You've died from dehydration</Original>
 			<Russian>Вы умерли от обезвоживания</Russian>
+		</Key>
+	</Package>
+	<Package name="Modul">
+		<Key ID="STR_KSS_Enabled">
+			<Original>Enabled</Original>
+			<Russian>Включено</Russian>
+		</Key>
+		<Key ID="STR_KSS_Disabled">
+			<Original>Disabled</Original>
+			<Russian>Выключено</Russian>
+		</Key>
+		<Key ID="STR_KSS_moduleHungerName">
+			<Original>Hunger's duration</Original>
+			<Russian>Продолжительность голода</Russian>
+		</Key>
+		<Key ID="STR_KSS_moduleHungerName">
+			<Original>Hunger's duration</Original>
+			<Russian>Продолжительность голода</Russian>
+		</Key>
+		<Key ID="STR_KSS_moduleHungerDescription">
+			<Original>Hunger's duration in minutes</Original>
+			<Russian>Продолжительность голода в минутах</Russian>
+		</Key>
+		<Key ID="STR_KSS_moduleThirstName">
+			<Original>Thirst's duration</Original>
+			<Russian>Продолжительность жажды</Russian>
+		</Key>
+		<Key ID="STR_KSS_moduleThirstDescription">
+			<Original>Thirst's duration in minutes</Original>
+			<Russian>Продолжительность жажды в минутах</Russian>
+		</Key>
+		<Key ID="STR_KSS_moduleHUDName">
+			<Original>Enable default HUD</Original>
+			<Russian>Включить дефолтный HUD</Russian>
 		</Key>
     </Package>
 </Project>

@@ -64,13 +64,20 @@ _endScript = {
 	switch ( _type) do { 
 		case "food" : {  
 			[_add] call KSS_fnc_Eat;
+
+			KSS_sleepTime_hunger = time + KSS_delay_hunger;
 		}; 
 		case "drink" : { 
 			[_add] call KSS_fnc_Drink;
+
+			KSS_sleepTime_thirst = time + KSS_delay_thirst;
 		};  
 		case "both" : {
 			[_add] call KSS_fnc_Eat;
 			[_add] call KSS_fnc_Drink;
+
+			KSS_sleepTime_hunger = time + KSS_delay_hunger;
+			KSS_sleepTime_thirst = time + KSS_delay_thirst;
 		};
 	};
 };

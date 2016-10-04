@@ -1,6 +1,6 @@
 /*
 	File: fn_init
-	Exec: postInit
+	Exec: module
 	Author: Kurt
 	Arguments :
 		Null
@@ -11,26 +11,29 @@
 #define def_HUNGER_DELAY 72
 #define def_THIRST_DELAY 36
 
-KSS_delay_hunger = [] call {
-	private _c = missionConfigFile / "KSS_Settings" / "Hunger";
-	if (isClass(_c)) then {
-		getNumber(_c / "delay");
-	} else {
-		def_HUNGER_DELAY;
-	};
+params ["_logic", "_units", "_activated"];
+
+if(not isNil "KSS_progress") exitWith {};
+
+if(isDedicated or not _activated) exitWith {
+	diag_log("KSS: can't init KSS. Something went wrong.");
 };
 
-
-
-KSS_delay_thirst = [] call {
-	private _c = missionConfigFile / "KSS_Settings" / "Thirst";
-	if (isClass(_c)) then {
-		getNumber(_c / "delay");
-	} else {
-		def_THIRST_DELAY;
-	};
+KSS_delay_hunger = _logic call {
+	private _tmp = _this getVariable ["hungerDelay", def_HUNGER_DELAY];
+	_return = _tmp * 60 / 100;
+	_return
 };
 
+KSS_delay_thirst = _logic call {
+	private _tmp = _this getVariable ["thirstDelay", def_HUNGER_DELAY];
+	private _return = _tmp * 60 / 100;
+	_return
+};
+
+KSS_drawingHUD = _logic getVariable ["drawHUD", False];
+
+KSS_progress = true;
 KSS_progress_hunger = true;
 KSS_progress_thirst = true;
 
@@ -38,7 +41,7 @@ KSS_progress_thirst = true;
 	diag_log("KSS: Hunger init");
 
 	KSS_hunger = 100;
-	KSS_sleepTime_hunger = time;
+	KSS_sleepTime_hunger = time + KSS_delay_hunger;
 
 	while {true} do 
 	{
@@ -75,7 +78,7 @@ KSS_progress_thirst = true;
 	diag_log("KSS: Thirst init");
 
 	KSS_thirst = 100;
-	KSS_sleepTime_thirst = time;
+	KSS_sleepTime_thirst = time + KSS_delay_thirst;
 
 	while {true} do 
 	{
@@ -117,31 +120,39 @@ for "_i" from 1 to (count _cfg - 1) do {
 	};
 };
 
-player addEventHandler [ 
-	"Killed", 
-	{
-		KSS_progress_hunger = false;
-		KSS_progress_thirst = false;
-	}
-];
+[] spawn {
+	waitUntil {sleep 1; !isNull player};
 
-player addEventHandler [ 
-	"Respawn", 
-	{
-		KSS_hunger = 100;
-		KSS_thirst = 100;
-
-		KSS_progress_hunger = true;
-		KSS_progress_thirst = true;
-	}
-];
-
-player addeventhandler ["InventoryOpened",{
-	0 spawn {
-		waituntil { !isNull(findDisplay 602) };     
-
-		((findDisplay 602) displayCtrl 638) ctrladdEventHandler ["LBDblClick", "_this spawn KSS_fnc_onItemUsed"];  
-		((findDisplay 602) displayCtrl 633) ctrladdEventHandler ["LBDblClick", "_this spawn KSS_fnc_onItemUsed"];  
-		((findDisplay 602) displayCtrl 619) ctrladdEventHandler ["LBDblClick", "_this spawn KSS_fnc_onItemUsed"];    
+	if(KSS_drawingHUD) then {
+		[] call KSS_fnc_drawDefaultHud;
 	};
-}];
+
+	player addEventHandler [
+		"Killed",
+		{
+			KSS_progress_hunger = false;
+			KSS_progress_thirst = false;
+		}
+	];
+
+	player addEventHandler [
+		"Respawn",
+		{
+			KSS_hunger = 100;
+			KSS_thirst = 100;
+
+			KSS_progress_hunger = true;
+			KSS_progress_thirst = true;
+		}
+	];
+
+	player addeventhandler ["InventoryOpened",{
+		0 spawn {
+			waituntil { !isNull(findDisplay 602) };
+
+			((findDisplay 602) displayCtrl 638) ctrlAddEventHandler ["LBDblClick", "_this spawn KSS_fnc_onItemUsed"];
+			((findDisplay 602) displayCtrl 633) ctrlAddEventHandler ["LBDblClick", "_this spawn KSS_fnc_onItemUsed"];
+			((findDisplay 602) displayCtrl 619) ctrlAddEventHandler ["LBDblClick", "_this spawn KSS_fnc_onItemUsed"];
+		};
+	}];
+}
