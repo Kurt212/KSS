@@ -41,6 +41,14 @@ _this spawn {
 		}
 	];
 
+	// if playing with TFAR add handlers to dialog
+	if(isClass (configFile / "CfgPatches" / "task_force_radio")) then {
+		_dialog displayAddEventHandler ["KeyUp", "_this call TFAR_fnc_onSwTangentReleasedHack"];
+		_dialog displayAddEventHandler ["keyDown", "_this call TFAR_fnc_onSwTangentPressedHack"];
+		_dialog displayAddEventHandler ["keyUp", "_this call TFAR_fnc_onLRTangentReleasedHack"];
+		_dialog displayAddEventHandler ["keyUp", "_this call TFAR_fnc_onDDTangentReleasedHack"];
+	};
+
 	_ctrlProgressBarTitle ctrlSetText _title;
 
 	// the filling script
