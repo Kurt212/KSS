@@ -11,11 +11,10 @@
 #define def_HUNGER_DELAY 72
 #define def_THIRST_DELAY 36
 
-params ["_logic", "_units", "_activated"];
+private _logic = [_this,0,objNull,[objNull]] call BIS_fnc_param;
+private _activated = [_this,2,true,[true]] call BIS_fnc_param;
 
-if(not isNil "KSS_progress") exitWith {};
-
-if(isDedicated or not _activated) exitWith {
+if(isDedicated or not _activated or not isNil "KSS_progress") exitWith {
 	diag_log("KSS: can't init KSS. Something went wrong.");
 };
 
@@ -26,7 +25,7 @@ KSS_delay_hunger = _logic call {
 };
 
 KSS_delay_thirst = _logic call {
-	private _tmp = _this getVariable ["thirstDelay", def_HUNGER_DELAY];
+	private _tmp = _this getVariable ["thirstDelay", def_THIRST_DELAY];
 	private _return = _tmp * 60 / 100;
 	_return
 };
@@ -155,4 +154,6 @@ for "_i" from 1 to (count _cfg - 1) do {
 			((findDisplay 602) displayCtrl 619) ctrlAddEventHandler ["LBDblClick", "_this spawn KSS_fnc_onItemUsed"];
 		};
 	}];
-}
+};
+
+true

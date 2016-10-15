@@ -11,7 +11,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"cba_main", "A3_Modules_F"};
+		requiredAddons[] = {"A3_Weapons_F_Items", "cba_main", "A3_Modules_F"};
 	};
 };
 

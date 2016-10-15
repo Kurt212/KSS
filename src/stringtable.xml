@@ -23,7 +23,7 @@
 		</Key>
 		<Key ID="STR_KSS_lowThirst_1">
 			<Original>You feel a little thirsty</Original>
-			<Russian>Вы чуствуете лёгкую жажду</Russian>
+			<Russian>Вы чувствуете лёгкую жажду</Russian>
 		</Key>
 		<Key ID="STR_KSS_lowThirst_2">
 			<Original>You feel thirsty. Find some water</Original>
@@ -42,7 +42,7 @@
 			<Russian>Вы умерли от обезвоживания</Russian>
 		</Key>
 	</Package>
-	<Package name="Modul">
+	<Package name="Module">
 		<Key ID="STR_KSS_Enabled">
 			<Original>Enabled</Original>
 			<Russian>Включено</Russian>
