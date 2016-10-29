@@ -3,9 +3,7 @@ class KSS
 	class core
 	{
 		file = "\kss\functions";
-		class init {
-			postInit = 1;
-		};
+		class init {};
 		class onItemUsed {};
 		
 		class Eat {};
