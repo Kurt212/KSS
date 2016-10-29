@@ -2,7 +2,7 @@ class ItemCore;
 class InventoryItem_Base_F;
 
 class kss_itemcore : ItemCore {
-    type = 0;//4;
+    type = 0;
     detectRange = -1;
     simulation = "ItemMineDetector";
 	scope = 2;
