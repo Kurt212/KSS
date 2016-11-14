@@ -40,6 +40,9 @@ _startScript = {
 		case "both" : {
 			_sound = "KSS_food";
 		};
+		case "alcohol" : {
+			_sound = "KSS_drink";
+		};
 	};
 
 	_end = time + _time * 0.8;
@@ -77,6 +80,14 @@ _endScript = {
 			[_add] call KSS_fnc_Drink;
 
 			KSS_sleepTime_hunger = time + KSS_delay_hunger;
+			KSS_sleepTime_thirst = time + KSS_delay_thirst;
+		};
+		case "alcohol" : {
+			[_add, _item] call KSS_fnc_drinkAlcohol;
+
+			_addWater = call compile getText(configFile >> "CfgWeapons" >> _item >> "KSS" >> "addWater");
+			[_addWater] call KSS_fnc_Drink;
+
 			KSS_sleepTime_thirst = time + KSS_delay_thirst;
 		};
 	};

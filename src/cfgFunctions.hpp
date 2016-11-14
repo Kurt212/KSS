@@ -8,6 +8,7 @@ class KSS
 		
 		class Eat {};
 		class Drink {};
+		class drinkAlcohol {};
 
 		class execAfter {};
 		class progressBar {};

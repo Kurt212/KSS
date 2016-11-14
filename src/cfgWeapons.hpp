@@ -436,3 +436,57 @@ class kss_mushrooms: kss_itemcore
 		add = "floor (random 5) + 10";
 	};
 };
+
+class kss_vodka : kss_itemcore
+{
+	displayName = "Водка";
+	descriptionShort = "";
+	picture = "\kss\data\vodka_CA.paa";
+	class ItemInfo: InventoryItem_Base_F {
+		mass = 5;
+	};
+	class KSS
+	{
+		delay = 10;
+		type = "alcohol";
+		add = "3";
+		addWater = "-10";
+		duration = "3 * 60";
+	};
+};
+
+class kss_beer_light : kss_itemcore
+{
+	displayName = "Светлое пиво";
+	descriptionShort = "";
+	picture = "\kss\data\beer_light_CA.paa";
+	class ItemInfo: InventoryItem_Base_F {
+		mass = 5;
+	};
+	class KSS
+	{
+		delay = 10;
+		type = "alcohol";
+		add = "1";
+		addWater = "20";
+		duration = "1.5 * 60";
+	};
+};
+
+class kss_beer_dark : kss_itemcore
+{
+	displayName = "Тёмное пиво";
+	descriptionShort = "";
+	picture = "\kss\data\beer_dark_CA.paa";
+	class ItemInfo: InventoryItem_Base_F {
+		mass = 5;
+	};
+	class KSS
+	{
+		delay = 10;
+		type = "alcohol";
+		add = "1";
+		addWater = "20";
+		duration = "1.5 * 60";
+	};
+};

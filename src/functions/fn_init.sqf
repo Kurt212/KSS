@@ -131,6 +131,10 @@ for "_i" from 1 to (count _cfg - 1) do {
 		{
 			KSS_progress_hunger = false;
 			KSS_progress_thirst = false;
+
+			KSS_alcoholLevel = 0;
+			KSS_alcoholTimeOut = 0;
+			terminate KSS_alcoholUnconsciousScript;
 		}
 	];
 
@@ -155,5 +159,10 @@ for "_i" from 1 to (count _cfg - 1) do {
 		};
 	}];
 };
+
+KSS_alcoholLevel = 0;
+KSS_alcoholTimeOut = 0;
+KSS_camShakeFrequency = 2;
+KSS_alcoholUnconsciousScript = scriptNull;
 
 true
