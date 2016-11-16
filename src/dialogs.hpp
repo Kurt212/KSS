@@ -6,5 +6,5 @@ class RscText;
 
 class RscTitles
 {
-	#include "dialogs\HUD_Default.hpp"
+    #include "dialogs\HUD_Default.hpp"
 };
