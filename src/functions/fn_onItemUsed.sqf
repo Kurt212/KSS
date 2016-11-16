@@ -1,6 +1,3 @@
-
--
-+
 /*
     File: fn_onItemUsed
     Exec: KSS_fnc_init
@@ -66,6 +63,8 @@ _endScript = {
     params ["_item", "_type", "_add"];
 
     player removeItem _item;
+
+    ["KSS_usedItem", ["_item", "_type"]] call CBA_fnc_localEvent;
 
     switch ( _type) do {
         case "food" : {
