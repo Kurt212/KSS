@@ -24,7 +24,9 @@ if (time > KSS_alcoholTimeOut) then {
 if (KSS_alcoholLevel >= 6) then {
 
     if !(isNil"ace_medical_fnc_setUnconscious") then {
-
-        [player, true, (KSS_alcoholLevel * 5 min 30)] call ace_medical_fnc_setUnconscious;
+        [] spawn {
+            sleep (random 5);
+            [player, true] call ace_medical_fnc_setUnconscious;
+        };
     };
 };

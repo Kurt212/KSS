@@ -131,7 +131,6 @@ class kss_steak : kss_itemcore
     };
 };
 
-
 class kss_chicken: kss_itemcore
 {
     displayName = "Куриная ножка";
@@ -450,7 +449,7 @@ class kss_vodka : kss_itemcore
         delay = 10;
         type = "alcohol";
         add = "3";
-        addWater = "-10";
+        addWater = "-(round random 6)";
         duration = "3 * 60";
     };
 };
@@ -468,8 +467,8 @@ class kss_beer_light : kss_itemcore
         delay = 10;
         type = "alcohol";
         add = "1";
-        addWater = "20";
-        duration = "1.5 * 60";
+        addWater = "10";
+        duration = "1 * 60";
     };
 };
 
@@ -486,7 +485,25 @@ class kss_beer_dark : kss_itemcore
         delay = 10;
         type = "alcohol";
         add = "1";
-        addWater = "20";
-        duration = "1.5 * 60";
+        addWater = "10";
+        duration = "1 * 60";
+    };
+};
+
+class kss_cocktail_patron : kss_itemcore
+{
+    displayName = "Коктель ""Патрон""";
+    descriptionShort = "";
+    picture = "\kss\data\cocktail_patron_CA.paa";
+    class ItemInfo: InventoryItem_Base_F {
+        mass = 5;
+    };
+    class KSS
+    {
+        delay = 10;
+        type = "alcohol";
+        add = "2";
+        addWater = "-(round random 6)";
+        duration = "2 * 60";
     };
 };
