@@ -4,17 +4,15 @@
     Author: Kurt
     Arguments :
         0 - (SCALAR) alcohol
-        1 - (STRING) className;
+        1 - (STRING) effect duration;
 */
 
-params ["_alcohol", "_className"];
-
-
-_duration = call compile getText(configFile >> "CfgWeapons" >> _className >> "KSS" >> "duration");
+params ["_alcohol", "_duration"];
 
 if (time > KSS_alcoholTimeOut) then {
     KSS_alcoholLevel = _alcohol;
     KSS_alcoholTimeOut = time + _duration;
+
     addCamShake [KSS_alcoholLevel, _duration, KSS_camShakeFrequency];
 } else {
     KSS_alcoholLevel = KSS_alcoholLevel + _alcohol;
@@ -24,15 +22,9 @@ if (time > KSS_alcoholTimeOut) then {
 };
 
 if (KSS_alcoholLevel >= 6) then {
-    if !(isNil"ace_medical_fnc_setUnconscious") then {
-        [player, true] call ace_medical_fnc_setUnconscious;
-        terminate KSS_alcoholUnconsciousScript;
 
-        KSS_alcoholUnconsciousScript = [] spawn {
-            while {time < KSS_alcoholTimeOut * 0.8} do {
-                sleep (KSS_alcoholLevel * 10 max 100);
-                [player, true] call ace_medical_fnc_setUnconscious;
-             };
-        };
+    if !(isNil"ace_medical_fnc_setUnconscious") then {
+
+        [player, true, (KSS_alcoholLevel * 5 min 30)] call ace_medical_fnc_setUnconscious;
     };
 };

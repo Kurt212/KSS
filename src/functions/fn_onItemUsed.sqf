@@ -83,10 +83,11 @@ _endScript = {
 			KSS_sleepTime_thirst = time + KSS_delay_thirst;
 		};
 		case "alcohol" : {
-			[_add, _item] call KSS_fnc_drinkAlcohol;
-
+			_duration = call compile getText(configFile >> "CfgWeapons" >> _item >> "KSS" >> "duration");
 			_addWater = call compile getText(configFile >> "CfgWeapons" >> _item >> "KSS" >> "addWater");
+
 			[_addWater] call KSS_fnc_Drink;
+			[_add, _duration] call KSS_fnc_drinkAlcohol;
 
 			KSS_sleepTime_thirst = time + KSS_delay_thirst;
 		};

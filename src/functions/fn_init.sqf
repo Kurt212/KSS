@@ -36,7 +36,7 @@ KSS_progress = true;
 KSS_progress_hunger = true;
 KSS_progress_thirst = true;
 
-[] spawn {
+KSS_hungerScript = [] spawn {
 	diag_log("KSS: Hunger init");
 
 	KSS_hunger = 100;
@@ -73,7 +73,7 @@ KSS_progress_thirst = true;
 	};
 };
 
-[] spawn {
+KSS_thirstScript = [] spawn {
 	diag_log("KSS: Thirst init");
 
 	KSS_thirst = 100;
@@ -163,6 +163,5 @@ for "_i" from 1 to (count _cfg - 1) do {
 KSS_alcoholLevel = 0;
 KSS_alcoholTimeOut = 0;
 KSS_camShakeFrequency = 2;
-KSS_alcoholUnconsciousScript = scriptNull;
 
 true
