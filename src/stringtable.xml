@@ -76,4 +76,122 @@
             <Russian>Включить дефолтный HUD</Russian>
         </Key>
     </Package>
+    <Package name="Weapons">
+        <Key ID="STR_KSS_bottle_small">
+            <Original>Bottle of water (small)</Original>
+            <Russian>Бутылка воды (маленькая)</Russian>
+        </Key>
+        <Key ID="STR_KSS_bottle_big">
+            <Original>Bottle of water (big)</Original>
+            <Russian>Бутылка воды (большая)</Russian>
+        </Key>
+        <Key ID="STR_KSS_soda_coke">
+            <Original>Coca-Cola</Original>
+            <Russian>Кока-Кола</Russian>
+        </Key>
+        <Key ID="STR_KSS_soda_mdew">
+            <Original>Mountain Dew</Original>
+            <Russian>Маунтин Дью</Russian>
+        </Key>
+        <Key ID="STR_KSS_soda_pepsi">
+            <Original>Pepsi-Cola</Original>
+            <Russian>Пепси-Кола</Russian>
+        </Key>
+        <Key ID="STR_KSS_chips">
+            <Original>Chips</Original>
+            <Russian>Чипсы</Russian>
+        </Key>
+        <Key ID="STR_KSS_steak">
+            <Original>Steak</Original>
+            <Russian>Стейк</Russian>
+        </Key>
+        <Key ID="STR_KSS_chicken">
+            <Original>Chicken's leg</Original>
+            <Russian>Куриная ножка</Russian>
+        </Key>
+        <Key ID="STR_KSS_bread">
+            <Original>Bread</Original>
+            <Russian>Буханка хлеба</Russian>
+        </Key>
+        <Key ID="STR_KSS_sausage">
+            <Original>Sausage</Original>
+            <Russian>Колбаса</Russian>
+        </Key>
+        <Key ID="STR_KSS_irp">
+            <Original>IRP</Original>
+            <Russian>ИРП</Russian>
+        </Key>
+        <Key ID="STR_KSS_mre">
+            <Original>MRE</Original>
+            <Russian>MRE</Russian>
+        </Key>
+        <Key ID="STR_KSS_tushenka_beef">
+            <Original>Stew (Beef)</Original>
+            <Russian>Тушёнка (Говядина)</Russian>
+        </Key>
+        <Key ID="STR_KSS_tushenka_ham">
+            <Original>Stew (Pork)</Original>
+            <Russian>Тушёнка (Свинина)</Russian>
+        </Key>
+        <Key ID="STR_KSS_shproti">
+            <Original>Sprats</Original>
+            <Russian>Шпроты</Russian>
+        </Key>
+        <Key ID="STR_KSS_losos">
+            <Original>Salmon</Original>
+            <Russian>Лосось</Russian>
+        </Key>
+        <Key ID="STR_KSS_kilka">
+            <Original>Sprat</Original>
+            <Russian>Килька</Russian>
+        </Key>
+        <Key ID="STR_KSS_caviar">
+            <Original>Caviar</Original>
+            <Russian>Икра</Russian>
+        </Key>
+        <Key ID="STR_KSS_corn">
+            <Original>Corn</Original>
+            <Russian>Кукуруза</Russian>
+        </Key>
+        <Key ID="STR_KSS_pea">
+            <Original>Pea</Original>
+            <Russian>Горох</Russian>
+        </Key>
+        <Key ID="STR_KSS_red_beans">
+            <Original>Red beans</Original>
+            <Russian>Красная фасоль</Russian>
+        </Key>
+        <Key ID="STR_KSS_tomatoes">
+            <Original>Tomatoes</Original>
+            <Russian>Томаты</Russian>
+        </Key>
+        <Key ID="STR_KSS_cucumbers">
+            <Original>Cucumbers</Original>
+            <Russian>Огурцы</Russian>
+        </Key>
+        <Key ID="STR_KSS_soup_vegetable">
+            <Original>Soup (Vegetable)</Original>
+            <Russian>Суп (Овощной)</Russian>
+        </Key>
+        <Key ID="STR_KSS_soup_chicken">
+            <Original>Soup (Chicken)</Original>
+            <Russian>Суп (Куриный)</Russian>
+        </Key>
+        <Key ID="STR_KSS_mushrooms">
+            <Original>Mushrooms</Original>
+            <Russian>Грибы</Russian>
+        </Key>
+        <Key ID="STR_KSS_vodka">
+            <Original>Vodka</Original>
+            <Russian>Водка</Russian>
+        </Key>
+        <Key ID="STR_KSS_beer_light">
+            <Original>Light beer</Original>
+            <Russian>Светлое пиво</Russian>
+        </Key>
+        <Key ID="STR_KSS_beer_dark">
+            <Original>Dark beer</Original>
+            <Russian>Тёмное пиво</Russian>
+        </Key>
+    </Package>
 </Project>

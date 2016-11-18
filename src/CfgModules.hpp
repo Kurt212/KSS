@@ -23,7 +23,7 @@ class KSS_Module : Module_F
     displayName = "Survival System";
     category = "KSS";
     function = "KSS_fnc_init";
-    icon = "\KSS\icon.paa";
+    icon = "\tf_kss\icon.paa";
     functionPriority = 2;
     isGlobal = 1;
     isTriggerActivated = 0;

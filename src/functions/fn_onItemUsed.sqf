@@ -64,7 +64,7 @@ _endScript = {
 
     player removeItem _item;
 
-    ["KSS_usedItem", ["_item", "_type"]] call CBA_fnc_localEvent;
+    ["KSS_usedItem", [_item, _type]] call CBA_fnc_localEvent;
 
     switch ( _type) do {
         case "food" : {

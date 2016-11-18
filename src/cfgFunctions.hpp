@@ -2,7 +2,7 @@ class KSS
 {
     class core
     {
-        file = "\kss\functions";
+        file = "\tf_kss\functions";
         class init {};
         class onItemUsed {};
 

@@ -4,22 +4,20 @@
     Author: Kurt
     Arguments :
         0 - (SCALAR) alcohol
-        1 - (STRING) effect duration;
+        1 - (SCALAR) effect duration;
 */
 
 params ["_alcohol", "_duration"];
 
-if (time > KSS_alcoholTimeOut) then {
-    KSS_alcoholLevel = _alcohol;
-    KSS_alcoholTimeOut = time + _duration;
-
-    addCamShake [KSS_alcoholLevel, _duration, KSS_camShakeFrequency];
-} else {
-    KSS_alcoholLevel = KSS_alcoholLevel + _alcohol;
-    KSS_alcoholTimeOut = time + _duration * 1.5;
-
-    addCamShake [KSS_alcoholLevel, _duration * 1.5, KSS_camShakeFrequency];
+if (time < KSS_alcoholTimeOut) then {
+    _alcohol = KSS_alcoholLevel + _alcohol;
+    _duration = _duration * 1.5;
 };
+
+KSS_alcoholLevel = _alcohol;
+KSS_alcoholTimeOut = time + _duration;
+
+addCamShake [KSS_alcoholLevel, _duration * 2, KSS_camShakeFrequency];
 
 if (KSS_alcoholLevel >= 6) then {
 
