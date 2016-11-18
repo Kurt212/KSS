@@ -1,4 +1,4 @@
 class CfgVehicles
 {
-	#include "CfgModules.hpp"
+    #include "CfgModules.hpp"
 };

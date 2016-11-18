@@ -1,43 +1,43 @@
 class CfgPatches
 {
-	class KSS
-	{
-		name = "Kurt's Survival System";
-		author = "Kurt";
-		authorUrl = "https://github.com/Kurt212";
+    class KSS
+    {
+        name = "Kurt's Survival System";
+        author = "Kurt";
+        authorUrl = "https://github.com/Kurt212";
 
-		version = "1.2.0";
+        version = "1.2.0";
 
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Weapons_F_Items", "cba_main", "A3_Modules_F"};
-	};
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 0.1;
+        requiredAddons[] = {"A3_Weapons_F_Items", "cba_main", "A3_Modules_F"};
+    };
 };
 
 class CfgFunctions
 {
-	#include "CfgFunctions.hpp"
+    #include "CfgFunctions.hpp"
 };
 
 class CfgWeapons
 {
-	#include "CfgWeapons.hpp"
+    #include "CfgWeapons.hpp"
 };
 
 class CfgSounds
 {
-	sounds[] = {};
-	#include "CfgSounds.hpp"
+    sounds[] = {};
+    #include "CfgSounds.hpp"
 };
 
 class CfgFactionClasses
 {
-	class NO_CATEGORY;
-	class KSS: NO_CATEGORY
-	{
-		displayName = "KSS";
-	};
+    class NO_CATEGORY;
+    class KSS: NO_CATEGORY
+    {
+        displayName = "KSS";
+    };
 };
 
 
