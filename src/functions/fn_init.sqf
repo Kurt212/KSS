@@ -134,7 +134,6 @@ for "_i" from 1 to (count _cfg - 1) do {
 
             KSS_alcoholLevel = 0;
             KSS_alcoholTimeOut = 0;
-            terminate KSS_alcoholUnconsciousScript;
         }
     ];
 
