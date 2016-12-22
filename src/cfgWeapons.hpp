@@ -229,9 +229,9 @@ class kss_tushenka_beef : kss_itemcore
 
 class kss_tushenka_ham : kss_itemcore
 {
-    displayName = "$STR_KSS_tushenka_ham";
+    displayName = "$STR_KSS_tushenka_pork";
     descriptionShort = "";
-    picture = "\tf_kss\data\tushenka_ham_CA.paa";
+    picture = "\tf_kss\data\tushenka_pork_CA.paa";
     class ItemInfo: InventoryItem_Base_F {
         mass = 10;
     };

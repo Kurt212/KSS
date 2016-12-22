@@ -19,14 +19,14 @@ if(isDedicated or not _activated or not isNil "KSS_progress") exitWith {
 };
 
 KSS_delay_hunger = _logic call {
-    private _tmp = _this getVariable ["hungerDelay", def_HUNGER_DELAY];
-    _return = _tmp * 60 / 100;
+    KSS_rawDelay_hunger = _this getVariable ["hungerDelay", def_HUNGER_DELAY];
+    _return = KSS_rawDelay_hunger * 60 / 100;
     _return
 };
 
 KSS_delay_thirst = _logic call {
-    private _tmp = _this getVariable ["thirstDelay", def_THIRST_DELAY];
-    private _return = _tmp * 60 / 100;
+    KSS_rawDelay_thirst = _this getVariable ["thirstDelay", def_THIRST_DELAY];
+    private _return = KSS_rawDelay_thirst * 60 / 100;
     _return
 };
 
@@ -163,5 +163,7 @@ for "_i" from 1 to (count _cfg - 1) do {
 KSS_alcoholLevel = 0;
 KSS_alcoholTimeOut = 0;
 KSS_camShakeFrequency = 1;
+
+[] call KSS_fnc_diaryRecord;
 
 true

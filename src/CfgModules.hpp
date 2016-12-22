@@ -20,7 +20,7 @@ class KSS_Module : Module_F
 {
     scope = 2;
     author = "Kurt";
-    displayName = "Survival System";
+    displayName = "$STR_KSS_ModuleName";
     category = "KSS";
     function = "KSS_fnc_init";
     icon = "\tf_kss\icon.paa";
