@@ -227,7 +227,7 @@ class kss_tushenka_beef : kss_itemcore
     };
 };
 
-class kss_tushenka_ham : kss_itemcore
+class kss_tushenka_pork : kss_itemcore
 {
     displayName = "$STR_KSS_tushenka_pork";
     descriptionShort = "";
