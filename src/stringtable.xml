@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KSS">
     <Package name="Notification">
+        <Key ID="STR_KSS_diaryHunger">
+            <Original>Hunger</Original>
+            <Russian>Голод</Russian>
+        </Key>
+        <Key ID="STR_KSS_diaryThirst">
+            <Original>Thirst</Original>
+            <Russian>Жажда</Russian>
+        </Key>
+        <Key ID="STR_KSS_diarytitle">
+            <Original>KSS - Settings</Original>
+             <Russian>KSS - Настройки</Russian>
+        </Key>
+    </Package>
+    <Package name="Notification">
         <Key ID="STR_KSS_lowHunger_1">
             <Original>You feel a little hungry</Original>
             <Russian>Вы чуствуете лёгкий голод</Russian>
@@ -43,6 +57,10 @@
         </Key>
     </Package>
     <Package name="Module">
+        <Key ID="STR_KSS_moduleName">
+            <Original>Survival System</Original>
+            <Russian>Система Выживания</Russian>
+        </Key>
         <Key ID="STR_KSS_Enabled">
             <Original>Enabled</Original>
             <Russian>Включено</Russian>
@@ -74,6 +92,16 @@
         <Key ID="STR_KSS_moduleHUDName">
             <Original>Enable default HUD</Original>
             <Russian>Включить дефолтный HUD</Russian>
+        </Key>
+    </Package>
+    <Package name="HUD">
+        <Key ID="STR_KSS_hudThirst">
+            <Original>Thirst : %1</Original>
+            <Russian>Жажда : %1</Russian>
+        </Key>
+        <Key ID="STR_KSS_hudHunger">
+            <Original>Hunger : %1</Original>
+            <Russian>Голод : %1</Russian>
         </Key>
     </Package>
     <Package name="Weapons">
@@ -129,7 +157,7 @@
             <Original>Stew (Beef)</Original>
             <Russian>Тушёнка (Говядина)</Russian>
         </Key>
-        <Key ID="STR_KSS_tushenka_ham">
+        <Key ID="STR_KSS_tushenka_pork">
             <Original>Stew (Pork)</Original>
             <Russian>Тушёнка (Свинина)</Russian>
         </Key>

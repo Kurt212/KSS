@@ -5,6 +5,7 @@ class KSS
         file = "\tf_kss\functions";
         class init {};
         class onItemUsed {};
+        class diaryRecord {};
 
         class Eat {};
         class Drink {};
