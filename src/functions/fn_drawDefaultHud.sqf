@@ -13,7 +13,7 @@ if (!isNil"KSS_hud_process") exitWith {};
 KSS_hud_process = true;
 
 KSS_fnc_drawHUD = {
-    _display = uiNamespace getVariable "RSS_HUD_0";
+    private _display = uiNamespace getVariable "RSS_HUD_0";
     if(KSS_progress_hunger) then {
         (_display displayCtrl 2110) ctrlSetText format [
             localize("STR_KSS_hudHunger"),

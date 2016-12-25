@@ -28,7 +28,7 @@ sleep 0.001;
 _startScript = {
     params ["_type", "_time"];
 
-    _sound = "";
+    private _sound = "";
 
     switch ( _type) do { 
         case "food" : {
@@ -97,11 +97,11 @@ _endScript = {
 };
 
 if (_item in KSS_usableItems) then {
-    _cfg = configFile >> "CfgWeapons" >> _item;
-    _delay = getNumber(_cfg >> "KSS" >> "delay");
-    _title = getText(_cfg >> "displayName");
-    _type = getText(_cfg >> "KSS" >> "type");
-    _add = call compile getText(_cfg >> "KSS" >> "add");
+    private _cfg = configFile >> "CfgWeapons" >> _item;
+    private _delay = getNumber(_cfg >> "KSS" >> "delay");
+    private _title = getText(_cfg >> "displayName");
+    private _type = getText(_cfg >> "KSS" >> "type");
+    private _add = call compile getText(_cfg >> "KSS" >> "add");
     [
         _delay,
         _title,
