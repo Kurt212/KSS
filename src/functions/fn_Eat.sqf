@@ -10,5 +10,6 @@ KSS_hunger = KSS_hunger + (_this select 0);
 KSS_hunger = KSS_hunger min 100;
 
 if(KSS_hunger <= 0) then {
-    player setDamage 0;
+    KSS_hunger = 0;
+    player setDamage 1;
 };
