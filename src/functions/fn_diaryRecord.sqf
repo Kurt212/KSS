@@ -1,3 +1,11 @@
+/*
+    File: fn_diaryRecord
+    Exec: KSS_fnc_init
+    Author: Kurt
+    Arguments :
+        Null
+*/
+
 #define ADD _txt = _txt + 
 #define BR _txt = _txt + "<br />"
 
