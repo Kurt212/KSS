@@ -11,5 +11,6 @@ KSS_thirst = KSS_thirst min 100;
 
 if(KSS_thirst <= 0) then {
     KSS_thirst = 0;
+    hint localize "STR_KSS_lowThirst_death";
     player setDamage 1;
 };

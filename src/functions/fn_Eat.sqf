@@ -11,5 +11,6 @@ KSS_hunger = KSS_hunger min 100;
 
 if(KSS_hunger <= 0) then {
     KSS_hunger = 0;
+    hint localize "STR_KSS_lowHunger_death";
     player setDamage 1;
 };
