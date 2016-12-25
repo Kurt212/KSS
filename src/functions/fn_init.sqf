@@ -18,6 +18,10 @@ if(isDedicated or not _activated or not isNil "KSS_progress") exitWith {
     diag_log("KSS: can't init KSS. Something went wrong.");
 };
 
+// ================================================================
+// Reading Module settings
+// ================================================================
+
 KSS_delay_hunger = _logic call {
     KSS_rawDelay_hunger = _this getVariable ["hungerDelay", def_HUNGER_DELAY];
     _return = KSS_rawDelay_hunger * 60 / 100;
@@ -31,8 +35,15 @@ KSS_delay_thirst = _logic call {
 };
 
 KSS_drawingHUD = _logic getVariable ["drawHUD", False];
-
 KSS_progress = true;
+
+// Write Module settings to diary
+[] call KSS_fnc_diaryRecord;
+
+// ================================================================
+// Starting Hunger, Thirst and Alocohol
+// ================================================================
+
 KSS_progress_hunger = true;
 KSS_progress_thirst = true;
 
@@ -110,14 +121,28 @@ KSS_thirstScript = [] spawn {
     };
 };
 
+KSS_alcoholLevel = 0;
+KSS_alcoholTimeOut = 0;
+KSS_camShakeFrequency = 1;
+
+// ================================================================
+// Reading ArmA's config
+// ================================================================
+
 KSS_usableItems = [];
-_cfg = configFile / "CfgWeapons";
-for "_i" from 1 to (count _cfg - 1) do {
-    _item = _cfg select _i;
-    if (isClass (_item / "KSS")) then {
-        PUSH(KSS_usableItems, configName _item);
+{
+    _cfg = configFile / _x;
+    for "_i" from 1 to (count _cfg - 1) do {
+        _item = _cfg select _i;
+        if (isClass (_item / "KSS")) then {
+            PUSH(KSS_usableItems, configName _item);
+        };
     };
-};
+} forEach ["CfgWeapons", "CfgMagazines", "CfgAmmo"];
+
+// ================================================================
+// Adding necessary event-handlers
+// ================================================================
 
 [] spawn {
     waitUntil {sleep 1; !isNull player};
@@ -158,11 +183,5 @@ for "_i" from 1 to (count _cfg - 1) do {
         };
     }];
 };
-
-KSS_alcoholLevel = 0;
-KSS_alcoholTimeOut = 0;
-KSS_camShakeFrequency = 1;
-
-[] call KSS_fnc_diaryRecord;
 
 true
