@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="KSS">
-    <Package name="Notification">
-        <Key ID="STR_KSS_diaryHunger">
-            <Original>Hunger</Original>
-            <Russian>Голод</Russian>
-        </Key>
-        <Key ID="STR_KSS_diaryThirst">
-            <Original>Thirst</Original>
-            <Russian>Жажда</Russian>
-        </Key>
+    <Package name="Diary">
         <Key ID="STR_KSS_diarytitle">
             <Original>KSS - Settings</Original>
              <Russian>KSS - Настройки</Russian>
