@@ -5,7 +5,7 @@ class kss_itemcore : ItemCore {
     type = 0;
     detectRange = -1;
     simulation = "ItemMineDetector";
-    scope = 2;
+    scope = 0;
     author = "Kurt";
     displayName = "Настоящий предмет!";
     descriptionShort = "Нихрена не делает";
@@ -21,6 +21,7 @@ class kss_itemcore : ItemCore {
 
 class kss_bottle_small : kss_itemcore
 {
+    scope = 2;
     displayName = "$STR_KSS_bottle_small";
     descriptionShort = "";
     picture = "\tf_kss\data\bottle_small_CA.paa";
@@ -35,8 +36,9 @@ class kss_bottle_small : kss_itemcore
     };
 };
 
-class kss_bottle_big : kss_itemcore
+class kss_bottle_big : kss_bottle_small
 {
+    scope = 2;
     displayName = "$STR_KSS_bottle_big";
     descriptionShort = "";
     picture = "\tf_kss\data\bottle_big_CA.paa";
@@ -51,7 +53,7 @@ class kss_bottle_big : kss_itemcore
     };
 };
 
-class kss_soda_coke : kss_itemcore
+class kss_soda_coke : kss_bottle_small
 {
     displayName = "$STR_KSS_soda_coke";
     descriptionShort = "";
@@ -67,7 +69,7 @@ class kss_soda_coke : kss_itemcore
     };
 };
 
-class kss_soda_mdew : kss_itemcore
+class kss_soda_mdew : kss_bottle_small
 {
     displayName = "$STR_KSS_soda_mdew";
     descriptionShort = "";
@@ -83,7 +85,7 @@ class kss_soda_mdew : kss_itemcore
     };
 };
 
-class kss_soda_pepsi : kss_itemcore
+class kss_soda_pepsi : kss_bottle_small
 {
     displayName = "$STR_KSS_soda_pepsi";
     descriptionShort = "";
@@ -99,7 +101,7 @@ class kss_soda_pepsi : kss_itemcore
     };
 };
 
-class kss_chips: kss_itemcore
+class kss_chips: kss_bottle_small
 {
     displayName = "$STR_KSS_chips";
     descriptionShort = "";
@@ -115,7 +117,7 @@ class kss_chips: kss_itemcore
     };
 };
 
-class kss_steak : kss_itemcore
+class kss_steak : kss_bottle_small
 {
     displayName = "$STR_KSS_steak";
     descriptionShort = "";
@@ -131,7 +133,7 @@ class kss_steak : kss_itemcore
     };
 };
 
-class kss_chicken: kss_itemcore
+class kss_chicken: kss_bottle_small
 {
     displayName = "$STR_KSS_chicken";
     descriptionShort = "";
@@ -147,7 +149,7 @@ class kss_chicken: kss_itemcore
     };
 };
 
-class kss_bread: kss_itemcore
+class kss_bread: kss_bottle_small
 {
     displayName = "$STR_KSS_bread";
     descriptionShort = "";
@@ -163,7 +165,7 @@ class kss_bread: kss_itemcore
     };
 };
 
-class kss_sausage : kss_itemcore
+class kss_sausage : kss_bottle_small
 {
     displayName = "$STR_KSS_sausage";
     descriptionShort = "";
@@ -179,7 +181,7 @@ class kss_sausage : kss_itemcore
     };
 };
 
-class kss_irp : kss_itemcore
+class kss_irp : kss_bottle_small
 {
     displayName = "$STR_KSS_irp";
     descriptionShort = "";
@@ -195,7 +197,7 @@ class kss_irp : kss_itemcore
     };
 };
 
-class kss_mre : kss_itemcore
+class kss_mre : kss_bottle_small
 {
     displayName = "$STR_KSS_mre";
     descriptionShort = "";
@@ -211,7 +213,7 @@ class kss_mre : kss_itemcore
     };
 };
 
-class kss_tushenka_beef : kss_itemcore
+class kss_tushenka_beef : kss_bottle_small
 {
     displayName = "$STR_KSS_tushenka_beef";
     descriptionShort = "";
@@ -227,7 +229,7 @@ class kss_tushenka_beef : kss_itemcore
     };
 };
 
-class kss_tushenka_pork : kss_itemcore
+class kss_tushenka_pork : kss_bottle_small
 {
     displayName = "$STR_KSS_tushenka_pork";
     descriptionShort = "";
@@ -243,7 +245,7 @@ class kss_tushenka_pork : kss_itemcore
     };
 };
 
-class kss_shproti : kss_itemcore
+class kss_shproti : kss_bottle_small
 {
     displayName = "$STR_KSS_shproti";
     descriptionShort = "";
@@ -259,7 +261,7 @@ class kss_shproti : kss_itemcore
     };
 };
 
-class kss_losos : kss_itemcore
+class kss_losos : kss_bottle_small
 {
     displayName = "$STR_KSS_losos";
     descriptionShort = "";
@@ -275,7 +277,7 @@ class kss_losos : kss_itemcore
     };
 };
 
-class kss_kilka : kss_itemcore
+class kss_kilka : kss_bottle_small
 {
     displayName = "$STR_KSS_kilka";
     descriptionShort = "";
@@ -291,7 +293,7 @@ class kss_kilka : kss_itemcore
     };
 };
 
-class kss_caviar: kss_itemcore
+class kss_caviar: kss_bottle_small
 {
     displayName = "$STR_KSS_caviar";
     descriptionShort = "";
@@ -307,7 +309,7 @@ class kss_caviar: kss_itemcore
     };
 };
 
-class kss_corn: kss_itemcore
+class kss_corn: kss_bottle_small
 {
     displayName = "$STR_KSS_corn";
     descriptionShort = "";
@@ -323,7 +325,7 @@ class kss_corn: kss_itemcore
     };
 };
 
-class kss_pea: kss_itemcore
+class kss_pea: kss_bottle_small
 {
     displayName = "$STR_KSS_pea";
     descriptionShort = "";
@@ -339,7 +341,7 @@ class kss_pea: kss_itemcore
     };
 };
 
-class kss_red_beans: kss_itemcore
+class kss_red_beans: kss_bottle_small
 {
     displayName = "$STR_KSS_red_beans";
     descriptionShort = "";
@@ -355,7 +357,7 @@ class kss_red_beans: kss_itemcore
     };
 };
 
-class kss_tomatoes: kss_itemcore
+class kss_tomatoes: kss_bottle_small
 {
     displayName = "$STR_KSS_tomatoes";
     descriptionShort = "";
@@ -371,7 +373,7 @@ class kss_tomatoes: kss_itemcore
     };
 };
 
-class kss_cucumbers: kss_itemcore
+class kss_cucumbers: kss_bottle_small
 {
     displayName = "$STR_KSS_cucumbers";
     descriptionShort = "";
@@ -387,7 +389,7 @@ class kss_cucumbers: kss_itemcore
     };
 };
 
-class kss_soup_vegetable: kss_itemcore
+class kss_soup_vegetable: kss_bottle_small
 {
     displayName = "$STR_KSS_soup_vegetable";
     descriptionShort = "";
@@ -404,7 +406,7 @@ class kss_soup_vegetable: kss_itemcore
 };
 
 
-class kss_soup_chicken: kss_itemcore
+class kss_soup_chicken: kss_bottle_small
 {
     displayName = "$STR_KSS_soup_chicken";
     descriptionShort = "";
@@ -420,7 +422,7 @@ class kss_soup_chicken: kss_itemcore
     };
 };
 
-class kss_mushrooms: kss_itemcore
+class kss_mushrooms: kss_bottle_small
 {
     displayName = "$STR_KSS_mushrooms";
     descriptionShort = "";
@@ -436,7 +438,7 @@ class kss_mushrooms: kss_itemcore
     };
 };
 
-class kss_vodka : kss_itemcore
+class kss_vodka : kss_bottle_small
 {
     displayName = "$STR_KSS_vodka";
     descriptionShort = "";
@@ -454,7 +456,7 @@ class kss_vodka : kss_itemcore
     };
 };
 
-class kss_beer_light : kss_itemcore
+class kss_beer_light : kss_bottle_small
 {
     displayName = "$STR_KSS_beer_light";
     descriptionShort = "";
@@ -472,7 +474,7 @@ class kss_beer_light : kss_itemcore
     };
 };
 
-class kss_beer_dark : kss_itemcore
+class kss_beer_dark : kss_bottle_small
 {
     displayName = "$STR_KSS_beer_dark";
     descriptionShort = "";
@@ -490,7 +492,7 @@ class kss_beer_dark : kss_itemcore
     };
 };
 
-class kss_cocktail_patron : kss_itemcore
+class kss_cocktail_patron : kss_bottle_small
 {
     displayName = "Коктель ""Патрон""";
     descriptionShort = "Приготовлен по рецепту тв. Москвина";
