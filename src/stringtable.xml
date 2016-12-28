@@ -50,8 +50,8 @@
     </Package>
     <Package name="Module">
         <Key ID="STR_KSS_moduleName">
-            <Original>Survival System</Original>
-            <Russian>Система Выживания</Russian>
+            <Original>KSS: Survival System</Original>
+            <Russian>KSS: Система Выживания</Russian>
         </Key>
         <Key ID="STR_KSS_Enabled">
             <Original>Enabled</Original>
