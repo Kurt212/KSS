@@ -6,14 +6,15 @@
         Null
 */
 
-if (!isNil"KSS_hud_process") exitWith {};
+if ( !isNull(uiNamespace getVariable ["RSS_HUD_0", displayNull]) ) exitWith {};
 
 ("KSS_HUD_0" call BIS_fnc_rscLayer) cutRsc ["KSS_HUD_0", "PLAIN"];
 
-KSS_hud_process = true;
-
 KSS_fnc_drawHUD = {
-    private _display = uiNamespace getVariable "RSS_HUD_0";
+    private _display = uiNamespace getVariable ["RSS_HUD_0", displayNull];
+    if (isNull _display) then {
+        ("KSS_HUD_0" call BIS_fnc_rscLayer) cutRsc ["KSS_HUD_0", "PLAIN"];
+    };
     if(KSS_progress_hunger) then {
         (_display displayCtrl 2110) ctrlSetText format [
             localize("STR_KSS_hudHunger"),
