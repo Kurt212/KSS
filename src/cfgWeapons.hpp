@@ -2,21 +2,11 @@ class ItemCore;
 class InventoryItem_Base_F;
 
 class kss_itemcore : ItemCore {
-    type = 0;
+    type = 4096;
     detectRange = -1;
     simulation = "ItemMineDetector";
     scope = 0;
     author = "Kurt";
-    displayName = "Настоящий предмет!";
-    descriptionShort = "Нихрена не делает";
-    class ItemInfo: InventoryItem_Base_F
-    {
-        mass = 5;
-    };
-    class Armory
-    {
-        disabled = 0;
-    };
 };
 
 class kss_bottle_small : kss_itemcore

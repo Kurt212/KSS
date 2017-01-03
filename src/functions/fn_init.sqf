@@ -151,8 +151,6 @@ KSS_usableItems = [];
         [] call KSS_fnc_drawDefaultHud;
     };
 
-
-
     player addEventHandler [
         "Killed",
         {
