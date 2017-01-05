@@ -1,7 +1,10 @@
+#define true 1
+#define false 0
+
 class KSS_ProgressBar_Dialog
 {
     idd = 21999;
-    movingEnable = true;
+    movingEnable = false;
     enableSimulation = true;
 
     onLoad = "uiNamespace setVariable ['KSS_ProgressBar', _this select 0]";
@@ -25,7 +28,7 @@ class KSS_ProgressBar_Dialog
         {
             idc = 1000;
             style = ST_CENTER;
-            text = "TEXT";
+            text = "";
             x = 0 * GUI_GRID_W + GUI_GRID_X;
             y = 9 * GUI_GRID_H + GUI_GRID_Y;
             w = 40 * GUI_GRID_W;
