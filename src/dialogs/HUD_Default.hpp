@@ -7,21 +7,21 @@ class KSS_HUD_0
     onLoad = "uiNamespace setVariable ['RSS_HUD_0', _this select 0]";
     class controls
     {
-        class Text_Hunger : RscText
+        class Text_Hunger : RscStructuredText
         {
             idc = 2110;
             x = "0.00125001 * safezoneW + safezoneX";
-            y = "0.822 * safezoneH + safezoneY";
-            w = 9 * GUI_GRID_W;
-            h = 2.5 * GUI_GRID_H;
+            y = "0.85 * safezoneH + safezoneY";
+            w = "0.118125 * safezoneW";
+            h = "0.07 * safezoneH";
         };
-        class Text_Thirst : RscText
+        class Text_Thirst : RscStructuredText
         {
             idc = 2120;
             x = "0.00125001 * safezoneW + safezoneX";
-            y = "0.906 * safezoneH + safezoneY";
-            w = 9 * GUI_GRID_W;
-            h = 2.5 * GUI_GRID_H;
+            y = "0.92 * safezoneH + safezoneY";
+            w = "0.118125 * safezoneW";
+            h = "0.07 * safezoneH";
         };
     };
 };

@@ -1,5 +1,6 @@
 class RscProgress;
 class RscText;
+class RscStructuredText;
 
 #include "dialogs\common.hpp"
 #include "dialogs\ProgressBar.hpp"
