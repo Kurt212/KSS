@@ -11,59 +11,23 @@ if ( !isNull(uiNamespace getVariable ["RSS_HUD_0", displayNull]) ) exitWith {};
 ("KSS_HUD_0" call BIS_fnc_rscLayer) cutRsc ["KSS_HUD_0", "PLAIN"];
 
 KSS_fnc_drawHUD = {
-    // getting _display from UInamespace
     private _display = uiNamespace getVariable ["RSS_HUD_0", displayNull];
     if (isNull _display) then {
         ("KSS_HUD_0" call BIS_fnc_rscLayer) cutRsc ["KSS_HUD_0", "PLAIN"];
     };
-
-    // defining 2 text ctrls
-    private _hungerText = _display displayCtrl 2110;
-    private _thirstText = _display displayCtrl 2120;
-
-    // ================================================================
-    // Drawing Hunger
-    // ================================================================
-
-    if (KSS_progress_hunger) then {
-        private _hungerValue = missionNamespace getVariable ["KSS_hunger", 0];
-        private _colorText = [] call {
-            if (_hungerValue < 20) then {
-                "#FF0000"
-            } else {
-                ""
-            }
-        };
-        _hungerText ctrlSetStructuredText parseText format [
+    if(KSS_progress_hunger) then {
+        (_display displayCtrl 2110) ctrlSetText format [
             localize("STR_KSS_hudHunger"),
-            _hungerValue,
-            _colorText
-        ];
+            missionNamespace getVariable ["KSS_hunger", 0]];
     } else {
-        _hungerText ctrlSetText "";
+        (_display displayCtrl 2110) ctrlSetText "";
     };
-
-    // ================================================================
-    // Drawing Hunger
-    // ================================================================
-
-    if (KSS_progress_thirst) then {
-        private _thirtValue = missionNamespace getVariable ["KSS_thirst", 0];
-        private _colorText = [] call {
-            systemChat str _thirtValue;
-            if (_thirtValue < 20) then {
-                "#FF0000"
-            } else {
-                ""
-            }
-        };
-        _thirstText ctrlSetStructuredText parseText format [
+    if(KSS_progress_thirst) then {
+        (_display displayCtrl 2120) ctrlSetText format [
             localize("STR_KSS_hudThirst"),
-            _thirtValue,
-            _colorText
-        ];
+            missionNamespace getVariable ["KSS_thirst", 0]];
     } else {
-        _thirstText ctrlSetText "";
+        (_display displayCtrl 2120) ctrlSetText "";
     };
 };
 

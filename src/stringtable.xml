@@ -88,12 +88,12 @@
     </Package>
     <Package name="HUD">
         <Key ID="STR_KSS_hudThirst">
-            <Original>Thirst : &lt;t color='%2'&gt;%1&lt;/t&gt;</Original>
-            <Russian>Жажда : &lt;t color='%2'&gt;%1&lt;/t&gt;</Russian>
+            <Original>Thirst : %1</Original>
+            <Russian>Жажда : %1</Russian>
         </Key>
         <Key ID="STR_KSS_hudHunger">
-            <Original>Hunger : &lt;t color='%2'&gt;%1&lt;/t&gt;</Original>
-            <Russian>Голод : &lt;t color='%2'&gt;%1&lt;/t&gt;</Russian>
+            <Original>Hunger : %1</Original>
+            <Russian>Голод : %1</Russian>
         </Key>
     </Package>
     <Package name="Weapons">
