@@ -6,7 +6,7 @@ class CfgPatches
         author = "Kurt";
         authorUrl = "https://github.com/Kurt212";
 
-        version = "1.3.1";
+        version = "1.3.2";
 
         units[] = {};
         weapons[] = {
