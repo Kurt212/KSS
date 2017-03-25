@@ -8,7 +8,12 @@ class CfgPatches
 
         version = "1.3.2";
 
-        units[] = {};
+        units[] = {
+            "KSS_fullBoxNATO10",
+            "KSS_fullBoxNATO20",
+            "KSS_fullBoxEAST10",
+            "KSS_fullBoxEAST20"
+        };
         weapons[] = {
             "kss_beer_dark",
             "kss_beer_light",

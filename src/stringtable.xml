@@ -100,6 +100,16 @@
             <Russian>Голод : %1</Russian>
         </Key>
     </Package>
+    <Package name="Boxes">
+        <Key ID="STR_KSS_fullBox10">
+            <Original>Supply Box Full (10)</Original>
+            <Russian>Ящик припасов Полный (10)</Russian>
+        </Key>
+        <Key ID="STR_KSS_fullBox20">
+            <Original>Supply Box Full (20)</Original>
+            <Russian>Ящик припасов Полный (20)</Russian>
+        </Key>
+    </Package>
     <Package name="Weapons">
         <Key ID="STR_KSS_bottle_small">
             <Original>Bottle of water (small)</Original>

@@ -7,11 +7,6 @@ waitUntil {
   !isNil "KSS_usableItems"
 };
 
-{
-	box addItemCargoGlobal [_x, 10];
-}forEach KSS_usableItems;
-
-
 box addAction [
 	"<t color = '#FF0000'>Голод на 10",
 	{

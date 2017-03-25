@@ -6,6 +6,7 @@ class KSS
         class init {};
         class onItemUsed {};
         class diaryRecord {};
+        class boxInit {};
 
         class Eat {};
         class Drink {};
