@@ -49,6 +49,15 @@ KSS_progress = true;
 
 KSS_progress_hunger = true;
 KSS_progress_thirst = true;
+KSS_staminaLimit = 60;
+
+[
+    "KSS_staminaControll",
+    "onEachFrame",
+    {
+        player setStamina (getstamina player) min (KSS_staminaLimit);
+    }
+] call BIS_fnc_addStackedEventHandler;
 
 KSS_hungerScript = [] spawn {
     diag_log("KSS: Hunger init");
@@ -61,28 +70,7 @@ KSS_hungerScript = [] spawn {
         waitUntil {time >= KSS_sleepTime_hunger};
 
         if(KSS_progress_hunger) then {
-            DEC(KSS_hunger);
-            if (KSS_enableHints) then {
-                switch(KSS_hunger) do {
-                    case 60: {
-                        hint localize "STR_KSS_lowHunger_1";
-                    };
-                    case 40: {
-                        hint localize "STR_KSS_lowHunger_2";
-                    };
-                    case 20: {
-                        hint localize "STR_KSS_lowHunger_3";
-                    };
-                    case 10: {
-                        hint localize "STR_KSS_lowHunger_4";
-                        player setDamage (damage player) * 1.5;
-                    };
-                    case 0: {
-                        hint localize "STR_KSS_lowHunger_death";
-                        player setDamage 1;
-                    };
-                };
-            };
+            [-1] call KSS_fnc_Eat;
         };
 
         KSS_sleepTime_hunger = time + KSS_delay_hunger;
@@ -100,28 +88,7 @@ KSS_thirstScript = [] spawn {
         waitUntil {time >= KSS_sleepTime_thirst};
 
         if (KSS_progress_thirst) then {
-            DEC(KSS_thirst);
-            if (KSS_enableHints) then {
-                switch(KSS_thirst) do {
-                    case 60: {
-                        hint localize "STR_KSS_lowThirst_1";
-                    };
-                    case 40: {
-                        hint localize "STR_KSS_lowThirst_2";
-                    };
-                    case 20: {
-                        hint localize "STR_KSS_lowThirst_3";
-                    };
-                    case 10: {
-                        hint localize "STR_KSS_lowThirst_4";
-                        player setDamage (damage player) * 1.5;
-                    };
-                    case 0: {
-                        hint localize "STR_KSS_lowThirst_death";
-                        player setDamage 1;
-                    };
-                };
-            };
+            [-1] call KSS_fnc_Drink;
         };
 
         KSS_sleepTime_thirst = time + KSS_delay_thirst;
