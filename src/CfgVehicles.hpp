@@ -4,11 +4,15 @@ class CfgEditorCategories
     {
         displayName = "KSS";
     };
+};
+
+class CfgEditorSubCategories
+{
     class KSS_boxes
     {
         displayName="KSS boxes";
     };
-}
+};
 
 #define item(_name, _count) class _xx_##_name { \
 name = #_name; \
