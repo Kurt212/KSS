@@ -85,6 +85,10 @@
             <Original>Enable default HUD</Original>
             <Russian>Включить дефолтный HUD</Russian>
         </Key>
+        <Key ID="STR_KSS_moduleHintsName">
+            <Original>Enable hints</Original>
+            <Russian>Включить подсказки</Russian>
+        </Key>
     </Package>
     <Package name="HUD">
         <Key ID="STR_KSS_hudThirst">

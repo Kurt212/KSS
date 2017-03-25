@@ -35,6 +35,9 @@ KSS_delay_thirst = _logic call {
 };
 
 KSS_drawingHUD = _logic getVariable ["drawHUD", False];
+
+KSS_enableHints = _logic getVariable ["enableHints", True];
+
 KSS_progress = true;
 
 // Write Module settings to diary
@@ -59,23 +62,25 @@ KSS_hungerScript = [] spawn {
 
         if(KSS_progress_hunger) then {
             DEC(KSS_hunger);
-            switch(KSS_hunger) do {
-                case 60: {
-                    hint localize "STR_KSS_lowHunger_1";
-                };
-                case 40: {
-                    hint localize "STR_KSS_lowHunger_2";
-                };
-                case 20: {
-                    hint localize "STR_KSS_lowHunger_3";
-                };
-                case 10: {
-                    hint localize "STR_KSS_lowHunger_4";
-                    player setDamage (damage player) * 1.5;
-                };
-                case 0: {
-                    hint localize "STR_KSS_lowHunger_death";
-                    player setDamage 1;
+            if (KSS_enableHints) then {
+                switch(KSS_hunger) do {
+                    case 60: {
+                        hint localize "STR_KSS_lowHunger_1";
+                    };
+                    case 40: {
+                        hint localize "STR_KSS_lowHunger_2";
+                    };
+                    case 20: {
+                        hint localize "STR_KSS_lowHunger_3";
+                    };
+                    case 10: {
+                        hint localize "STR_KSS_lowHunger_4";
+                        player setDamage (damage player) * 1.5;
+                    };
+                    case 0: {
+                        hint localize "STR_KSS_lowHunger_death";
+                        player setDamage 1;
+                    };
                 };
             };
         };
@@ -96,23 +101,25 @@ KSS_thirstScript = [] spawn {
 
         if (KSS_progress_thirst) then {
             DEC(KSS_thirst);
-            switch(KSS_thirst) do {
-                case 60: {
-                    hint localize "STR_KSS_lowThirst_1";
-                };
-                case 40: {
-                    hint localize "STR_KSS_lowThirst_2";
-                };
-                case 20: {
-                    hint localize "STR_KSS_lowThirst_3";
-                };
-                case 10: {
-                    hint localize "STR_KSS_lowThirst_4";
-                    player setDamage (damage player) * 1.5;
-                };
-                case 0: {
-                    hint localize "STR_KSS_lowThirst_death";
-                    player setDamage 1;
+            if (KSS_enableHints) then {
+                switch(KSS_thirst) do {
+                    case 60: {
+                        hint localize "STR_KSS_lowThirst_1";
+                    };
+                    case 40: {
+                        hint localize "STR_KSS_lowThirst_2";
+                    };
+                    case 20: {
+                        hint localize "STR_KSS_lowThirst_3";
+                    };
+                    case 10: {
+                        hint localize "STR_KSS_lowThirst_4";
+                        player setDamage (damage player) * 1.5;
+                    };
+                    case 0: {
+                        hint localize "STR_KSS_lowThirst_death";
+                        player setDamage 1;
+                    };
                 };
             };
         };
