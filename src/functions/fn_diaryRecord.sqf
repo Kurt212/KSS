@@ -24,6 +24,9 @@ ADD (format ["<font color='#ff0000'>%1</font> : %2", localize("STR_KSS_moduleHun
 BR;
 ADD (format ["<font color='#ff0000'>%1</font> : %2", localize("STR_KSS_moduleHUDName"), KSS_drawingHUD]);
 BR;
+ADD (format ["<font color='#ff0000'>%1</font> : %2", localize("STR_KSS_moduleHintsName"), KSS_enableHints]);
+BR;
+
 
 player createDiarySubject ["kss", "KSS"];
 player createDiaryRecord ["kss", [localize("STR_KSS_diarytitle"), _txt]];
