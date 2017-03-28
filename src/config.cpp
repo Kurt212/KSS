@@ -36,6 +36,7 @@ class CfgPatches
             "kss_sausage",
             "kss_shproti",
             "kss_soda_coke",
+            "kss_soda_drpepper",
             "kss_soda_mdew",
             "kss_soda_pepsi",
             "kss_soup_chicken",

@@ -91,6 +91,22 @@ class kss_soda_pepsi : kss_bottle_small
     };
 };
 
+class kss_soda_drpepper : kss_bottle_small
+{
+    displayName = "Dr Pepper";
+    descriptionShort = "";
+    picture = "\tf_kss\data\soda_drpepper_CA.paa";
+    class ItemInfo: InventoryItem_Base_F {
+        mass = 5;
+    };
+    class KSS
+    {
+        delay = 8;
+        type = "drink";
+        add = "20";
+    };
+};
+
 class kss_chips: kss_bottle_small
 {
     displayName = "$STR_KSS_chips";

@@ -55,7 +55,9 @@ KSS_staminaLimit = 60;
     "KSS_staminaControll",
     "onEachFrame",
     {
-        player setStamina (getstamina player) min (KSS_staminaLimit);
+        if (KSS_staminaLimit != 60) then {
+            player setStamina ((getstamina player) min (KSS_staminaLimit));
+        };
     }
 ] call BIS_fnc_addStackedEventHandler;
 

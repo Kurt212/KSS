@@ -60,6 +60,7 @@ class CfgVehicles
             item10(kss_sausage);
             item10(kss_shproti);
             item10(kss_soda_coke);
+            item10(kss_soda_drpepper);
             item10(kss_soda_mdew);
             item10(kss_soda_pepsi);
             item10(kss_soup_chicken);
@@ -97,6 +98,7 @@ class CfgVehicles
             item20(kss_sausage);
             item20(kss_shproti);
             item20(kss_soda_coke);
+            item20(kss_soda_drpepper);
             item20(kss_soda_mdew);
             item20(kss_soda_pepsi);
             item20(kss_soup_chicken);
@@ -143,6 +145,7 @@ class CfgVehicles
             item10(kss_sausage);
             item10(kss_shproti);
             item10(kss_soda_coke);
+            item10(kss_soda_drpepper);
             item10(kss_soda_mdew);
             item10(kss_soda_pepsi);
             item10(kss_soup_chicken);
@@ -180,6 +183,7 @@ class CfgVehicles
             item20(kss_sausage);
             item20(kss_shproti);
             item20(kss_soda_coke);
+            item20(kss_soda_drpepper);
             item20(kss_soda_mdew);
             item20(kss_soda_pepsi);
             item20(kss_soup_chicken);
