@@ -93,11 +93,11 @@
     <Package name="HUD">
         <Key ID="STR_KSS_hudThirst">
             <Original>Thirst : %1</Original>
-            <Russian>Жажда : %1</Russian>
+            <Russian>Жажда  : %1</Russian>
         </Key>
         <Key ID="STR_KSS_hudHunger">
             <Original>Hunger : %1</Original>
-            <Russian>Голод : %1</Russian>
+            <Russian>Голод  : %1</Russian>
         </Key>
     </Package>
     <Package name="Boxes">

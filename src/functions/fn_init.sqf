@@ -59,6 +59,9 @@ KSS_progress_hunger = true;
 KSS_progress_thirst = true;
 KSS_staminaLimit = 60;
 
+KSS_hunger_delay_offset = round random (KSS_delay_hunger * 0.1);
+KSS_thirst_delay_offset = round random (KSS_delay_thirst * 0.1);
+
 [
     "KSS_staminaControll",
     "onEachFrame",
@@ -73,7 +76,7 @@ KSS_hungerScript = [] spawn {
     diag_log("KSS: Hunger init");
 
     KSS_hunger = 100;
-    KSS_sleepTime_hunger = time + KSS_delay_hunger;
+    KSS_sleepTime_hunger = time + KSS_delay_hunger + KSS_hunger_delay_offset;
 
     while {true} do
     {
@@ -91,7 +94,7 @@ KSS_thirstScript = [] spawn {
     diag_log("KSS: Thirst init");
 
     KSS_thirst = 100;
-    KSS_sleepTime_thirst = time + KSS_delay_thirst;
+    KSS_sleepTime_thirst = time + KSS_delay_thirst + KSS_thirst_delay_offset;
 
     while {true} do
     {
@@ -132,8 +135,10 @@ KSS_usableItems = [];
     waitUntil {sleep 1; !isNull player};
 
     if(KSS_drawingHUD) then {
-        [] call KSS_fnc_drawDefaultHud;
+        [] spawn KSS_fnc_drawDefaultHud;
     };
+
+    [] call KSS_fnc_effectLoop;
 
     player addEventHandler [
         "Killed",

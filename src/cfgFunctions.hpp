@@ -16,5 +16,6 @@ class KSS
 
         class drawDefaultHud {};
         class destroyDialog {};
+        class effectLoop {};
     };
 };
