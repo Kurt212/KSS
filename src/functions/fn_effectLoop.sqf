@@ -51,7 +51,7 @@ KSS_last_blackout = time;
 
 KSS_hungerEffect_script = [] spawn {
     while {sleep KSS_delay_hunger; true} do {
-        if ((KSS_hunger <= 50) && (5 >= random 100) && (time - KSS_last_blackout > 30)) then {
+        if ((KSS_hunger <= 50) && (5 >= random 100) && (time - KSS_last_blackout > 600)) then {
             _sound = selectRandom KSS_effect_sounds; 
             [player, _sound] remoteExec ["say3D", 0];
             addCamShake [40 / KSS_hunger, 10, 1];
