@@ -7,7 +7,7 @@
 */
 
 KSS_hunger = KSS_hunger + (_this select 0);
-KSS_hunger = KSS_hunger min 100;
+KSS_hunger = (KSS_hunger min 100) max 0;
 
 switch (true) do { 
     case ((KSS_hunger > 40) && (KSS_staminaLimit <= 30)) : {
@@ -44,8 +44,4 @@ if (KSS_enableHints) then {
             player setDamage 1;
         };
     };
-};
-
-if(KSS_hunger <= 0) then {
-    KSS_hunger = 0;
 };

@@ -7,7 +7,7 @@
 */
 
 KSS_thirst = KSS_thirst + (_this select 0);
-KSS_thirst = KSS_thirst min 100;
+KSS_thirst = (KSS_thirst min 100) max 0;
 
 if (KSS_enableHints) then {
     switch(KSS_thirst) do {
@@ -29,8 +29,4 @@ if (KSS_enableHints) then {
             player setDamage 1;
         };
     };
-};
-
-if(KSS_thirst <= 0) then {
-    KSS_thirst = 0;
 };
