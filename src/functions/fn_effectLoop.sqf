@@ -47,15 +47,15 @@ KSS_fnc_colorCorrection = {
     };
 };
 
-KSS_last_blackout = time;
+KSS_last_blackout = -10 * 60;
 
 KSS_hungerEffect_script = [] spawn {
     while {sleep KSS_delay_hunger; true} do {
-        if ((KSS_hunger <= 50) && (5 >= random 100) && (time - KSS_last_blackout > 600)) then {
+        if ((KSS_hunger <= 50) && (5 >= random 100) && (time - KSS_last_blackout > (10 * 60))) then {
             KSS_last_blackout = time;
-            _sound = selectRandom KSS_effect_sounds; 
-            /*
+            _sound = selectRandom KSS_effect_sounds;
             [player, _sound] remoteExec ["say3D", 0];
+            /*
             addCamShake [40 / KSS_hunger, 10, 1];
             private _brightness = KSS_hunger / 100;
             private _contrast = KSS_hunger / 100;
