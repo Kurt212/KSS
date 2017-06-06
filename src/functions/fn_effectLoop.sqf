@@ -54,6 +54,7 @@ KSS_hungerEffect_script = [] spawn {
         if ((KSS_hunger <= 50) && (5 >= random 100) && (time - KSS_last_blackout > 600)) then {
             KSS_last_blackout = time;
             _sound = selectRandom KSS_effect_sounds; 
+            /*
             [player, _sound] remoteExec ["say3D", 0];
             addCamShake [40 / KSS_hunger, 10, 1];
             private _brightness = KSS_hunger / 100;
@@ -69,6 +70,7 @@ KSS_hungerEffect_script = [] spawn {
                 ],
                 3 + (floor random 5)
             ] call KSS_fnc_colorCorrection;
+            */
         }
     };
 };
