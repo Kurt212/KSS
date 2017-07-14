@@ -16,7 +16,7 @@ class KSS_HUD_0
 
             x = "0.01 * safezoneW + safezoneX";
             y = "0.90 * safezoneH + safezoneY";
-            w = "0.15 * safezoneW";
+            w = "0.1125 * safezoneW";
             h = "0.03 * safezoneH";
         };
         class Text_Thirst : Text_Hunger
@@ -37,7 +37,7 @@ class KSS_HUD_0
 
             x = "0.01 * safezoneW + safezoneX";
             y = "0.90 * safezoneH + safezoneY";
-            w = "0.15 * safezoneW";
+            w = "0.1125 * safezoneW";
             h = "0.03 * safezoneH";
         };
         class Progress_Thirst : Progress_Hunger
