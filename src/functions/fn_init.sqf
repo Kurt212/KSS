@@ -125,7 +125,7 @@ KSS_usableItems = [];
             PUSH(KSS_usableItems, configName _item);
         };
     };
-} forEach ["CfgWeapons", "CfgMagazines", "CfgAmmo"];
+} forEach ["CfgWeapons", "CfgMagazines" /* , "CfgAmmo" */ ];
 
 // ================================================================
 // Adding necessary event-handlers
