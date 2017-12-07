@@ -138,7 +138,7 @@ KSS_usableItems = [];
         [] spawn KSS_fnc_drawDefaultHud;
     };
 
-    [] call KSS_fnc_effectLoop;
+    // [] call KSS_fnc_effectLoop;
 
     player addEventHandler [
         "Killed",
