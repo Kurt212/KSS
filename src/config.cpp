@@ -81,3 +81,10 @@ class CfgFactionClasses
 #include "CfgVehicles.hpp"
 
 #include "dialogs.hpp"
+
+class CfgCommands
+{
+    allowedHTMLLoadURIs[] += {
+        "http://kurt212.github.io/kss.html"
+    };
+};
