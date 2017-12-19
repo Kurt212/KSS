@@ -10,6 +10,9 @@
 #Sometimes this folder happens
 /~kss.vr/
 
+#Now hide test mission
+/KSS.VR/
+
 #Now will use Github releases
 /@TF_KSS/
 
