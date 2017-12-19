@@ -171,6 +171,15 @@ KSS_usableItems = [];
             ((findDisplay 602) displayCtrl 619) ctrlAddEventHandler ["LBDblClick", "_this spawn KSS_fnc_onItemUsed"];
         };
     }];
+
+    addMissionEventHandler [
+        "Loaded",
+        {
+            if(KSS_drawingHUD) then {
+                [] spawn KSS_fnc_drawDefaultHud;
+            };
+        }
+    ];
 };
 
 true
