@@ -37,6 +37,7 @@ _startScript = {
         case "drink" : {
             _sound = "KSS_drink";
         };
+        case "both2";
         case "both" : {
             _sound = "KSS_food";
         };
@@ -80,6 +81,14 @@ _endScript = {
         case "both" : {
             [_add] call KSS_fnc_Eat;
             [_add] call KSS_fnc_Drink;
+
+            KSS_sleepTime_hunger = time + KSS_delay_hunger;
+            KSS_sleepTime_thirst = time + KSS_delay_thirst;
+        };
+        case "both2" : {
+            _add params ["_addFood", "_addWater"];
+            [_addWater] call KSS_fnc_Drink;
+            [_addFood] call KSS_fnc_Eat;
 
             KSS_sleepTime_hunger = time + KSS_delay_hunger;
             KSS_sleepTime_thirst = time + KSS_delay_thirst;
