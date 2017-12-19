@@ -64,7 +64,7 @@ class CfgWeapons
 
 class CfgSounds
 {
-    sounds[] = {};
+    // sounds[] = {};
     #include "CfgSounds.hpp"
 };
 
