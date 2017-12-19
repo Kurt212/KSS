@@ -118,7 +118,7 @@ KSS_camShakeFrequency = 1;
 
 KSS_usableItems = [];
 {
-    _cfg = configFile / _x;
+    private _cfg = configFile / _x;
     for "_i" from 1 to (count _cfg - 1) do {
         _item = _cfg select _i;
         if (isClass (_item / "KSS")) then {

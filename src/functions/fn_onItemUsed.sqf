@@ -98,10 +98,27 @@ _endScript = {
 
 if (_item in KSS_usableItems) then {
     private _cfg = configFile >> "CfgWeapons" >> _item;
-    private _delay = getNumber(_cfg >> "KSS" >> "delay");
+    private _missionCfg = missionConfigFile >> "CfgKSS" >> _item;
     private _title = getText(_cfg >> "displayName");
-    private _type = getText(_cfg >> "KSS" >> "type");
-    private _add = call compile getText(_cfg >> "KSS" >> "add");
+    _delay = 0;
+    _type = "";
+    _add = 0;
+    if (isNumber (_missionCfg / "delay")) then {
+        _delay = getNumber(_missionCfg / "delay");
+    } else {
+        _delay = getNumber(_cfg >> "KSS" >> "delay");
+    };
+    if (isText (_missionCfg / "type")) then {
+        _type = getText(_missionCfg / "type");
+    } else {
+        _type = getText(_cfg / "KSS" / "type");
+    };
+    if (isText (_missionCfg / "add")) then {
+        _add = call compile getText(_missionCfg / "add");
+    } else {
+        _add = call compile getText(_cfg / "KSS" / "add");
+    };
+    systemChat str [_delay, _type, _add];
     [
         _delay,
         _title,
