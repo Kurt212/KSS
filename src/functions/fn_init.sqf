@@ -16,14 +16,32 @@ private _logic = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 private _activated = [_this,2,true,[true]] call BIS_fnc_param;
 */
 
+private _disableModules_count = count (allMissionObjects "KSS_Module_Disable");
+
+if (canSuspend && _disableModules_count > 0) then {
+    waitUntil {
+        uiSleep 0.25;
+        !isNil "KSS_disableModulesInited"  && {KSS_disableModulesInited == _disableModules_count}
+    };
+};
+
+/* better run in unscheduled env */
+if (canSuspend) exitWith {
+    [KSS_fnc_init, _this] call CBA_fnc_directCall;
+};
+
 params [
     ["_logic", objNull],
     "",
     ["_activated", true]
 ];
 
-if(isDedicated or not _activated or not isNil "KSS_progress") exitWith {
-    diag_log("KSS: can't init KSS. Something went wrong.");
+if (isDedicated or not _activated or not isNil "KSS_progress") exitWith {
+    diag_log text "KSS: can't init KSS. Something went wrong.";
+};
+
+if (!isNil "KSS_disabled") exitWith {
+    diag_log text "KSS: KSS was disabled by module"
 };
 
 // ================================================================
@@ -73,7 +91,7 @@ KSS_thirst_delay_offset = round random (KSS_delay_thirst * 0.1);
 ] call BIS_fnc_addStackedEventHandler;
 
 KSS_hungerScript = [] spawn {
-    diag_log("KSS: Hunger init");
+    diag_log text "KSS: Hunger init";
 
     KSS_hunger = 100;
     KSS_sleepTime_hunger = time + KSS_delay_hunger + KSS_hunger_delay_offset;
@@ -91,7 +109,7 @@ KSS_hungerScript = [] spawn {
 };
 
 KSS_thirstScript = [] spawn {
-    diag_log("KSS: Thirst init");
+    diag_log text "KSS: Thirst init";
 
     KSS_thirst = 100;
     KSS_sleepTime_thirst = time + KSS_delay_thirst + KSS_thirst_delay_offset;
@@ -134,7 +152,7 @@ KSS_usableItems = [];
 [] spawn {
     waitUntil {sleep 1; !isNull player};
 
-    if(KSS_drawingHUD) then {
+    if (KSS_drawingHUD) then {
         [] spawn KSS_fnc_drawDefaultHud;
     };
 

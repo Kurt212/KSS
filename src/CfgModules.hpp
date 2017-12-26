@@ -87,3 +87,31 @@ class KSS_Module : Module_F
         };
     };
 };
+
+class KSS_Module_Disable : KSS_Module
+{
+    displayName = "$STR_KSS_moduleDisableName";
+    function = "KSS_fnc_disable";
+    class Arguments : ArgumentsBaseUnits
+    {
+        class DisableType
+        {
+            displayName = "$STR_KSS_moduleDisableTypeName";
+            typeName = "NUMBER";
+            class values
+            {
+                class Synched
+                {
+                    name = "$STR_KSS_moduleDisableSynchedName";
+                    value = 0;
+                    default = true;
+                };
+                class AdminOnly
+                {
+                    name = "$STR_KSS_moduleDisableAdminName";
+                    value = 1;
+                };
+            };
+        };
+    };
+};

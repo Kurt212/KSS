@@ -89,6 +89,22 @@
             <Original>Enable hints</Original>
             <Russian>Включить подсказки</Russian>
         </Key>
+        <Key ID="STR_KSS_moduleDisableName">
+            <Original>Disable KSS</Original>
+            <Russian>Отключить KSS</Russian>
+        </Key>
+        <Key ID="STR_KSS_moduleDisableTypeName">
+            <Original>Disable KSS for</Original>
+            <Russian>Отключить KSS для</Russian>
+        </Key>
+        <Key ID="STR_KSS_moduleDisableSynchedName">
+            <Original>Units, synched with module</Original>
+            <Russian>Юнитов, синхронизировнных с модулем</Russian>
+        </Key>
+        <Key ID="STR_KSS_moduleDisableAdminName">
+            <Original>Admins and/or server hosts (works in SP)</Original>
+            <Russian>Админов и/или хостов (работает в одиночной игре)</Russian>
+        </Key>
     </Package>
     <Package name="HUD">
         <Key ID="STR_KSS_hudThirst">
