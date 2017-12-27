@@ -98,7 +98,7 @@ KSS_hungerScript = [] spawn {
 
     while {true} do
     {
-        waitUntil {time >= KSS_sleepTime_hunger};
+        waitUntil {uiSleep 0.25; time >= KSS_sleepTime_hunger};
 
         if(KSS_progress_hunger) then {
             [-1] call KSS_fnc_Eat;
@@ -116,7 +116,7 @@ KSS_thirstScript = [] spawn {
 
     while {true} do
     {
-        waitUntil {time >= KSS_sleepTime_thirst};
+        waitUntil {uiSleep 0.25; time >= KSS_sleepTime_thirst};
 
         if (KSS_progress_thirst) then {
             [-1] call KSS_fnc_Drink;
