@@ -16,6 +16,8 @@ private _logic = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 private _activated = [_this,2,true,[true]] call BIS_fnc_param;
 */
 
+/* wait until all disable modules are inited */
+
 private _disableModules_count = count (allMissionObjects "KSS_Module_Disable");
 
 if (canSuspend && _disableModules_count > 0) then {
