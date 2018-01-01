@@ -85,6 +85,7 @@ class CfgFactionClasses
 class CfgCommands
 {
     allowedHTMLLoadURIs[] += {
-        "http://kurt212.github.io/kss.html"
+        "http://kurt212.github.io/kss_en.html",
+        "http://kurt212.github.io/kss_ru.html"
     };
 };

@@ -7,6 +7,7 @@ class KSS
         class onItemUsed {};
         class diaryRecord {};
         class disable {};
+        class showKSSInfo {};
 
         class Eat {};
         class Drink {};
