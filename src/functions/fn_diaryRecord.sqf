@@ -26,6 +26,10 @@ ADD (format ["<font color='#ff0000'>%1</font> : %2", localize("STR_KSS_moduleHUD
 BR;
 ADD (format ["<font color='#ff0000'>%1</font> : %2", localize("STR_KSS_moduleHintsName"), KSS_enableHints]);
 BR;
+BR;
+BR;
+ADD (format ["<font color='#ff0000'>%1</font>", "<executeClose expression='[] call KSS_fnc_showKSSInfo'>Open KSS info page</executeClose>"]);
+BR;
 
 
 player createDiarySubject ["kss", "KSS"];

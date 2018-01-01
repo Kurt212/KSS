@@ -42,3 +42,6 @@ waitUntil {
 };
 
 _html ctrlShow true;
+
+/* So you will not see this page again on loading in mission */
+profileNamespace setVariable ["KSS_info_seen", true];
