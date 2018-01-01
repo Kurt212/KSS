@@ -28,7 +28,7 @@ ADD (format ["<font color='#ff0000'>%1</font> : %2", localize("STR_KSS_moduleHin
 BR;
 BR;
 BR;
-ADD (format ["<font color='#ff0000'>%1</font>", "<executeClose expression='[] call KSS_fnc_showKSSInfo'>Open KSS info page</executeClose>"]);
+ADD ("<executeClose expression='[] call KSS_fnc_showKSSInfo'>Open KSS info page</executeClose>");
 BR;
 
 

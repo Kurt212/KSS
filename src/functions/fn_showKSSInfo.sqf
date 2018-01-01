@@ -11,11 +11,15 @@ if (!canSuspend) exitWith {
 disableSerialization;
 // unscheduled
 
+waitUntil {
+    (!isNull (findDisplay 46))
+};
+
 isNil {
-    createDialog "KSS_Info";
-_display = uiNamespace getVariable "KSS_Info";
-_group = uiNamespace getVariable "KSS_Info_Group";
-_html = uiNamespace getVariable "KSS_Info_RscHTML";
+    (findDisplay 46) createDisplay "KSS_Info";
+    _display = uiNamespace getVariable "KSS_Info";
+    _group = uiNamespace getVariable "KSS_Info_Group";
+    _html = uiNamespace getVariable "KSS_Info_RscHTML";
     _group ctrlSetFade 1;
     _group ctrlCommit 0;
     
@@ -43,5 +47,5 @@ waitUntil {
 
 _html ctrlShow true;
 
-/* So you will not see this page again on loading in mission */
+/* So you will not see this page again on loading in */
 profileNamespace setVariable ["KSS_info_seen", true];

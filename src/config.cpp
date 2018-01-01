@@ -89,3 +89,14 @@ class CfgCommands
         "http://kurt212.github.io/kss_ru.html"
     };
 };
+
+class Cfg3DEN
+{
+    class EventHandlers
+    {
+        class KSS
+        {
+            OnMissionPreview = "if (!(profileNamespace getVariable ['KSS_info_seen', false]) && (count (allMissionObjects 'KSS_Module') > 0)) then { [] call KSS_fnc_showKSSInfo }";
+        };
+    };
+};
