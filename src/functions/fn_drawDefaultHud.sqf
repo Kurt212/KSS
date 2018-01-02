@@ -6,6 +6,10 @@
         Null
 */
 
+if (!canSuspend) exitWith {
+    _this spawn KSS_fnc_drawDefaultHUD;
+};
+
 if ( !isNull(uiNamespace getVariable ["KSS_HUD_0", displayNull]) ) exitWith {};
 
 ("KSS_HUD_0" call BIS_fnc_rscLayer) cutRsc ["KSS_HUD_0", "PLAIN"];
