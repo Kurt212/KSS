@@ -90,8 +90,8 @@
             <Russian>Включить подсказки</Russian>
         </Key>
         <Key ID="STR_KSS_moduleDisableName">
-            <Original>Disable KSS</Original>
-            <Russian>Отключить KSS</Russian>
+            <Original>KSS: Disable KSS</Original>
+            <Russian>KSS: Отключить KSS</Russian>
         </Key>
         <Key ID="STR_KSS_moduleDisableTypeName">
             <Original>Disable KSS for</Original>
