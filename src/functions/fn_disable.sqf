@@ -15,7 +15,7 @@ if (canSuspend) exitWith {
     [KSS_fnc_disable, _this] call CBA_fnc_directCall;  
 };
 
-systemChat str _this;
+// systemChat str _this;
 
 params [
     ["_logic", objNull],

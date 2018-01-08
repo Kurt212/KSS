@@ -127,7 +127,7 @@ if (_item in KSS_usableItems) then {
     } else {
         _add = call compile getText(_cfg / "KSS" / "add");
     };
-    systemChat str [_delay, _type, _add];
+    // systemChat str [_delay, _type, _add];
     [
         _delay,
         _title,
