@@ -16,7 +16,7 @@ _text = _ctrl lbText _index;
 _item = _ctrl lbData _index;
 
 if (_item == "") then {
-    _data = "getText (_x >> 'displayName') == _text" configClasses(configFile >> "CfgWeapons");
+    _data = "getText (_x >> 'displayName') == _text && isClass (_x >> 'KSS')" configClasses(configFile >> "CfgWeapons");
     if (count _data > 0) then {
         _item = configName (_data select 0);
     };
