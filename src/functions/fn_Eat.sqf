@@ -24,24 +24,33 @@ switch (true) do {
     };
 };    
 
-if (KSS_enableHints) then {
-    switch(KSS_hunger) do {
-        case 60: {
+
+switch(KSS_hunger) do {
+    case 60: {
+        if (KSS_enableHints) then {
             hint localize "STR_KSS_lowHunger_1";
         };
-        case 40: {
+    };
+    case 40: {
+        if (KSS_enableHints) then {
             hint localize "STR_KSS_lowHunger_2";
         };
-        case 20: {
+    };
+    case 20: {
+        if (KSS_enableHints) then {
             hint localize "STR_KSS_lowHunger_3";
         };
-        case 10: {
+    };
+    case 10: {
+        if (KSS_enableHints) then {
             hint localize "STR_KSS_lowHunger_4";
-            player setDamage (damage player) * 1.5;
         };
-        case 0: {
+        player setDamage (damage player) * 1.5;
+    };
+    case 0: {
+        if (KSS_enableHints) then {
             hint localize "STR_KSS_lowHunger_death";
-            player setDamage 1;
         };
+        player setDamage 1;
     };
 };
