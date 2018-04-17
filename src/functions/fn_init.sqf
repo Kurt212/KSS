@@ -82,6 +82,9 @@ KSS_staminaLimit = 60;
 KSS_hunger_delay_offset = round random (KSS_delay_hunger * 0.1);
 KSS_thirst_delay_offset = round random (KSS_delay_thirst * 0.1);
 
+KSS_hunger = 100;
+KSS_thirst = 100;
+
 [
     "KSS_staminaControll",
     "onEachFrame",
@@ -92,10 +95,29 @@ KSS_thirst_delay_offset = round random (KSS_delay_thirst * 0.1);
     }
 ] call BIS_fnc_addStackedEventHandler;
 
+// So that it is possible to cause death via setting KSS variables
+[
+    "KSS_variableContoller",
+    "onEachFrame",
+    {
+        if (KSS_hunger <= 0) then {
+            if (KSS_enableHints) then {
+                hint localize "STR_KSS_lowHunger_death";
+            };
+            player setDamage 1;
+        };
+        if (KSS_thirst <= 0) then {
+            if (KSS_enableHints) then {
+                hint localize "STR_KSS_lowThirst_death";
+            };
+            player setDamage 1;
+        };
+    }
+] call BIS_fnc_addStackedEventHandler;
+
 KSS_hungerScript = [] spawn {
     diag_log text "KSS: Hunger init";
 
-    KSS_hunger = 100;
     KSS_sleepTime_hunger = time + KSS_delay_hunger + KSS_hunger_delay_offset;
 
     while {true} do
@@ -113,7 +135,6 @@ KSS_hungerScript = [] spawn {
 KSS_thirstScript = [] spawn {
     diag_log text "KSS: Thirst init";
 
-    KSS_thirst = 100;
     KSS_sleepTime_thirst = time + KSS_delay_thirst + KSS_thirst_delay_offset;
 
     while {true} do

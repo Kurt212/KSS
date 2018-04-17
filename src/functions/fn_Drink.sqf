@@ -34,7 +34,7 @@ switch(KSS_thirst) do {
     case 0: {
         if (KSS_enableHints) then {
             hint localize "STR_KSS_lowThirst_death";
-        }
+        };
         player setDamage 1;
     };
 };
