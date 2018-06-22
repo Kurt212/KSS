@@ -1,5 +1,6 @@
 #Ignore file running Arma
 *.bat
+*.sh
 
 #Of course
 *.biprivatekey
