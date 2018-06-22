@@ -221,6 +221,8 @@ KSS_usableItems = [];
             };
         }
     ];
+
+    [] call KSS_fnc_initACE;
 };
 
 true

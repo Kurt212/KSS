@@ -14,6 +14,10 @@
 #include "../dik_keyCodes.h"
 // #define DEBUG
 
+#ifdef DEBUG
+systemChat str [__FILE__, _this];
+#endif
+
 while {dialog} do {
     closeDialog 0;
 };

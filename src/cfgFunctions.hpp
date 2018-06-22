@@ -5,9 +5,11 @@ class KSS
         file = "\tf_kss\functions";
         class init {};
         class onItemUsed {};
+        class useItem {};
         class diaryRecord {};
         class disable {};
         class showKSSInfo {};
+        class initACE {};
 
         class Eat {};
         class Drink {};
