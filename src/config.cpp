@@ -54,18 +54,18 @@ class CfgPatches
 
 class CfgFunctions
 {
-    #include "CfgFunctions.hpp"
+    #include "cfgFunctions.hpp"
 };
 
 class CfgWeapons
 {
-    #include "CfgWeapons.hpp"
+    #include "cfgWeapons.hpp"
 };
 
 class CfgSounds
 {
     // sounds[] = {};
-    #include "CfgSounds.hpp"
+    #include "cfgSounds.hpp"
 };
 
 class CfgFactionClasses
@@ -78,7 +78,7 @@ class CfgFactionClasses
 };
 
 
-#include "CfgVehicles.hpp"
+#include "cfgVehicles.hpp"
 
 #include "dialogs.hpp"
 

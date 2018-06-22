@@ -23,7 +23,7 @@ count = _count; \
 
 class CfgVehicles
 {
-    #include "CfgModules.hpp"
+    #include "cfgModules.hpp"
 
     class Box_NATO_Equip_F;
     class KSS_fullBoxNATO10 : Box_NATO_Equip_F
