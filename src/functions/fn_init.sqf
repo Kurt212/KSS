@@ -173,7 +173,7 @@ KSS_usableItems = [];
 // ================================================================
 
 [] spawn {
-    waitUntil {sleep 1; !isNull player};
+    waitUntil {sleep 0.25; !isNull player};
 
     if (KSS_drawingHUD) then {
         [] spawn KSS_fnc_drawDefaultHud;
