@@ -6,7 +6,7 @@ class CfgPatches
         author = "Kurt";
         authorUrl = "https://github.com/Kurt212";
 
-        version = "1.5.1";
+        version = "1.5.2";
 
         units[] = {
             "KSS_fullBoxNATO10",
