@@ -4,244 +4,302 @@
         <Key ID="STR_KSS_diarytitle">
             <Original>KSS - Settings</Original>
              <Russian>KSS - Настройки</Russian>
+             <Turkish>KSS - Ayarlar</Turkish>
         </Key>
     </Package>
     <Package name="Notification">
         <Key ID="STR_KSS_lowHunger_1">
             <Original>You feel a little hungry</Original>
             <Russian>Вы чуствуете лёгкий голод</Russian>
+            <Turkish>Acıkmaya başlıyorsun</Turkish>
         </Key>
         <Key ID="STR_KSS_lowHunger_2">
             <Original>You feel hungry. Find some food</Original>
             <Russian>Вы чувствуете голод. Найдите еду</Russian>
+            <Turkish>Kendini aç hissediyorsun. Biraz yemek bul</Turkish>
         </Key>
         <Key ID="STR_KSS_lowHunger_3">
             <Original>You a very hungry. Hurry up, find some food</Original>
             <Russian>Вы сильно голодны. Быстрее ищите еду</Russian>
+            <Turkish>Çok açsın. Hemen yemek bul</Turkish>
         </Key>
         <Key ID="STR_KSS_lowHunger_4">
             <Original>You are terribly hungry. You start feeling weak</Original>
             <Russian>Вы ужасно голодный. Вы начинаете слабеть</Russian>
+            <Turkish>Aşırı açsın. Zayıf hissetmeye başlıyorsun</Turkish>
         </Key>
         <Key ID="STR_KSS_lowHunger_death">
             <Original>You've starved to death</Original>
             <Russian>Вы умерли от голода</Russian>
+            <Turkish>Açlıktan öldün</Turkish>
         </Key>
         <Key ID="STR_KSS_lowThirst_1">
             <Original>You feel a little thirsty</Original>
             <Russian>Вы чувствуете лёгкую жажду</Russian>
+            <Turkish>Susanmaya başlıyorsun</Turkish>
         </Key>
         <Key ID="STR_KSS_lowThirst_2">
             <Original>You feel thirsty. Find some water</Original>
             <Russian>Вы чувствуете жажду. Найдите воду</Russian>
+            <Turkish>Kendini susanmış hissediyorsun. Biraz su bul</Turkish>
         </Key>
         <Key ID="STR_KSS_lowThirst_3">
             <Original>You a very thirsty. Hurry up, find some water</Original>
             <Russian>Вы сильно хотите пить. Быстрее ищите воду</Russian>
+            <Turkish>Çok susandın. Hemen su bul</Turkish>
         </Key>
         <Key ID="STR_KSS_lowThirst_4">
             <Original>You are terribly thirsty. You start feeling weak</Original>
             <Russian>Вы ужасно хотите пить. Вы начинаете слабеть</Russian>
+            <Turkish>Aşırı susandın. Zayıf hissetmeye başlıyorsun</Turkish>
         </Key>
         <Key ID="STR_KSS_lowThirst_death">
             <Original>You've died from dehydration</Original>
             <Russian>Вы умерли от обезвоживания</Russian>
+            <Turkish>Susuzluktan öldün</Turkish>
         </Key>
     </Package>
     <Package name="Module">
         <Key ID="STR_KSS_moduleName">
             <Original>KSS: Survival System</Original>
             <Russian>KSS: Система Выживания</Russian>
+            <Turkish>KSS: Yaşam Sistemi</Turkish>
         </Key>
         <Key ID="STR_KSS_Enabled">
             <Original>Enabled</Original>
             <Russian>Включено</Russian>
+            <Turkish>Açık</Turkish>
         </Key>
         <Key ID="STR_KSS_Disabled">
             <Original>Disabled</Original>
             <Russian>Выключено</Russian>
+            <Turkish>Kapalı</Turkish>
         </Key>
         <Key ID="STR_KSS_moduleHungerName">
             <Original>Hunger's duration</Original>
             <Russian>Продолжительность голода</Russian>
+            <Turkish>Açlık Süresi</Turkish>
         </Key>
         <Key ID="STR_KSS_moduleHungerName">
             <Original>Hunger's duration</Original>
             <Russian>Продолжительность голода</Russian>
+            <Turkish>Açlık Süresi</Turkish>
         </Key>
         <Key ID="STR_KSS_moduleHungerDescription">
             <Original>Hunger's duration in minutes</Original>
             <Russian>Продолжительность голода в минутах</Russian>
+            <Turkish>Açlığın dakika cinsinden süresi</Turkish>
         </Key>
         <Key ID="STR_KSS_moduleThirstName">
             <Original>Thirst's duration</Original>
             <Russian>Продолжительность жажды</Russian>
+            <Turkish>Susanma Süresi</Turkish>
         </Key>
         <Key ID="STR_KSS_moduleThirstDescription">
             <Original>Thirst's duration in minutes</Original>
             <Russian>Продолжительность жажды в минутах</Russian>
+            <Turkish>Susanmanın dakike cinsinden süresi</Turkish>
         </Key>
         <Key ID="STR_KSS_moduleHUDName">
             <Original>Enable default HUD</Original>
             <Russian>Включить дефолтный HUD</Russian>
+            <Turkish>Varsayılan HUD'u aktifleştir</Turkish>
         </Key>
         <Key ID="STR_KSS_moduleHintsName">
             <Original>Enable hints</Original>
             <Russian>Включить подсказки</Russian>
+            <Turkish>İpuçlarını Aktif et</Turkish>
         </Key>
         <Key ID="STR_KSS_moduleDisableName">
             <Original>KSS: Disable KSS</Original>
             <Russian>KSS: Отключить KSS</Russian>
+            <Turkish>KSS: KSS'yi Etkisizleştir</Turkish>
         </Key>
         <Key ID="STR_KSS_moduleDisableTypeName">
             <Original>Disable KSS for</Original>
             <Russian>Отключить KSS для</Russian>
+            <Turkish>KSS'yi ektisizleştir,</Turkish>
         </Key>
         <Key ID="STR_KSS_moduleDisableSynchedName">
             <Original>Units, synched with module</Original>
             <Russian>Юнитов, синхронизировнных с модулем</Russian>
+            <Turkish>Birlikler için, modül ile sekronize edilen</Turkish>
         </Key>
         <Key ID="STR_KSS_moduleDisableAdminName">
             <Original>Admins and/or server hosts (works in SP)</Original>
             <Russian>Админов и/или хостов (работает в одиночной игре)</Russian>
+            <Turkish>Yönetici ve/veya sunucu hostu (sadece Tek Oyunculu)</Turkish>
         </Key>
     </Package>
     <Package name="HUD">
         <Key ID="STR_KSS_hudThirst">
             <Original>Thirst : %1</Original>
             <Russian>Жажда  : %1</Russian>
+            <Turkish>Susuzluk : %1</Turkish>
         </Key>
         <Key ID="STR_KSS_hudHunger">
             <Original>Hunger : %1</Original>
             <Russian>Голод  : %1</Russian>
+            <Turkish>Açlık : %1</Turkish>
         </Key>
     </Package>
     <Package name="Boxes">
         <Key ID="STR_KSS_fullBox10">
             <Original>Supply Box Full (10)</Original>
             <Russian>Ящик припасов Полный (10)</Russian>
+            <Turkish>Tedarik Kutusu Dolu (10)</Turkish>
         </Key>
         <Key ID="STR_KSS_fullBox20">
             <Original>Supply Box Full (20)</Original>
             <Russian>Ящик припасов Полный (20)</Russian>
+            <Turkish>Tedarik Kutusu Dolu (20)</Turkish>
         </Key>
     </Package>
     <Package name="Weapons">
         <Key ID="STR_KSS_bottle_small">
             <Original>Bottle of water (small)</Original>
             <Russian>Бутылка воды (маленькая)</Russian>
+            <Turkish>Şişe Su (Küçük)</Turkish>
         </Key>
         <Key ID="STR_KSS_bottle_big">
             <Original>Bottle of water (big)</Original>
             <Russian>Бутылка воды (большая)</Russian>
+            <Turkish>Şişe Su (Büyük)</Turkish>
         </Key>
         <Key ID="STR_KSS_soda_coke">
             <Original>Coca-Cola</Original>
             <Russian>Кока-Кола</Russian>
+            <Turkish>Coca-Cola</Turkish>
         </Key>
         <Key ID="STR_KSS_soda_mdew">
             <Original>Mountain Dew</Original>
             <Russian>Маунтин Дью</Russian>
+            <Turkish>Dağ Çayı</Turkish>
         </Key>
         <Key ID="STR_KSS_soda_pepsi">
             <Original>Pepsi-Cola</Original>
             <Russian>Пепси-Кола</Russian>
+            <Turkish>Pepsi-Cola</Turkish>
         </Key>
         <Key ID="STR_KSS_chips">
             <Original>Chips</Original>
             <Russian>Чипсы</Russian>
+            <Turkish>Cips</Turkish>
         </Key>
         <Key ID="STR_KSS_steak">
             <Original>Steak</Original>
             <Russian>Стейк</Russian>
+            <Turkish>Biftek</Turkish>
         </Key>
         <Key ID="STR_KSS_chicken">
             <Original>Chicken's leg</Original>
             <Russian>Куриная ножка</Russian>
+            <Turkish>Tavuk Butu</Turkish>
         </Key>
         <Key ID="STR_KSS_bread">
             <Original>Bread</Original>
             <Russian>Буханка хлеба</Russian>
+            <Turkish>Ekmek</Turkish>
         </Key>
         <Key ID="STR_KSS_sausage">
             <Original>Sausage</Original>
             <Russian>Колбаса</Russian>
+            <Turkish>Sosis</Turkish>
         </Key>
         <Key ID="STR_KSS_irp">
             <Original>IRP</Original>
             <Russian>ИРП</Russian>
+            <Turkish>IRP</Turkish>
         </Key>
         <Key ID="STR_KSS_mre">
             <Original>MRE</Original>
             <Russian>MRE</Russian>
+            <Turkish>MRE</Turkish>
         </Key>
         <Key ID="STR_KSS_tushenka_beef">
             <Original>Stew (Beef)</Original>
             <Russian>Тушёнка (Говядина)</Russian>
+            <Turkish>Güveç (Sığır Eti)</Turkish>
         </Key>
         <Key ID="STR_KSS_tushenka_pork">
             <Original>Stew (Pork)</Original>
             <Russian>Тушёнка (Свинина)</Russian>
+            <Turkish>Güveç (Domuz)</Turkish>
         </Key>
         <Key ID="STR_KSS_shproti">
             <Original>Sprats</Original>
             <Russian>Шпроты</Russian>
+            <Turkish>Çaça balıkları</Turkish>
         </Key>
         <Key ID="STR_KSS_losos">
             <Original>Salmon</Original>
             <Russian>Лосось</Russian>
+            <Turkish>Somon</Turkish>
         </Key>
         <Key ID="STR_KSS_kilka">
             <Original>Sprat</Original>
             <Russian>Килька</Russian>
+            <Turkish>Çaça balığı</Turkish>
         </Key>
         <Key ID="STR_KSS_caviar">
             <Original>Caviar</Original>
             <Russian>Икра</Russian>
+            <Turkish>Havyar</Turkish>
         </Key>
         <Key ID="STR_KSS_corn">
             <Original>Corn</Original>
             <Russian>Кукуруза</Russian>
+            <Turkish>Mısır</Turkish>
         </Key>
         <Key ID="STR_KSS_pea">
             <Original>Pea</Original>
             <Russian>Горох</Russian>
+            <Turkish>Bezelye</Turkish>
         </Key>
         <Key ID="STR_KSS_red_beans">
             <Original>Red beans</Original>
             <Russian>Красная фасоль</Russian>
+            <Turkish>Kırmızı Bira</Turkish>
         </Key>
         <Key ID="STR_KSS_tomatoes">
             <Original>Tomatoes</Original>
             <Russian>Томаты</Russian>
+            <Turkish>Domates</Turkish>
         </Key>
         <Key ID="STR_KSS_cucumbers">
             <Original>Cucumbers</Original>
             <Russian>Огурцы</Russian>
+            <Turkish>Salatalık</Turkish>
         </Key>
         <Key ID="STR_KSS_soup_vegetable">
             <Original>Soup (Vegetable)</Original>
             <Russian>Суп (Овощной)</Russian>
+            <Turkish>Sebzeli Çorba</Turkish>
         </Key>
         <Key ID="STR_KSS_soup_chicken">
             <Original>Soup (Chicken)</Original>
             <Russian>Суп (Куриный)</Russian>
+            <Turkish>Tavuklu Çorba</Turkish>
         </Key>
         <Key ID="STR_KSS_mushrooms">
             <Original>Mushrooms</Original>
             <Russian>Грибы</Russian>
+            <Turkish>Mantarlar</Turkish>
         </Key>
         <Key ID="STR_KSS_vodka">
             <Original>Vodka</Original>
             <Russian>Водка</Russian>
+            <Turkish>Votka</Turkish>
         </Key>
         <Key ID="STR_KSS_beer_light">
             <Original>Light beer</Original>
             <Russian>Светлое пиво</Russian>
+            <Turkish>Beyaz Bira</Turkish>
         </Key>
         <Key ID="STR_KSS_beer_dark">
             <Original>Dark beer</Original>
             <Russian>Тёмное пиво</Russian>
+            <Turkish>Siyah Bira</Turkish>
         </Key>
     </Package>
 </Project>
